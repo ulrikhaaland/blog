@@ -50,10 +50,6 @@ type AppPropsWithLayout = AppProps & {
 const App = ({ Component, pageProps, router }: AppPropsWithLayout) => {
   const { authStore } = useStore();
 
-  const getLayout = Component.getLayout ?? ((page) => page);
-
-  const { open, setOpen, user } = authStore;
-
   useEffect(() => {
     if (!authStore.user && auth) authStore.checkAuth();
   }, [authStore]);
