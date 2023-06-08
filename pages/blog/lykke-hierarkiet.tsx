@@ -28,49 +28,53 @@ const content = (
 
     <p>
       Nysgjerrigheten pirret, jeg gikk bort til ham og ignorerte kulden som
-      trengte inn i kroppen min. "Hvordan kan du være så rolig i dette været?"
-      spurte jeg, ordene mine knapt tolkbare over regnets jevne rytme.
+      trengte inn i kroppen min. &quot;Hvordan kan du være så rolig i dette
+      været?&quot; spurte jeg, ordene mine knapt tolkbare over regnets jevne
+      rytme.
     </p>
     <br></br>
 
     <p>
-      Øynene hans glitret, og tonen var myk. "Lykkehierarkiet," sa han, stemmen
-      hans bar varmen fra en peis. "Det er en måte å måle egenverdi gjennom
-      lykke, i stedet for de vanlige markørene som rikdom eller utseende."
+      Øynene hans glitret, og tonen var myk. &quot;Lykkehierarkiet,&quot; sa
+      han, stemmen hans bar varmen fra en peis. &quot;Det er en måte å måle
+      egenverdi gjennom lykke, i stedet for de vanlige markørene som rikdom
+      eller utseende.&quot;
     </p>
     <br></br>
 
     <p>
-      "Du skjønner, det handler om å akseptere hva som er og fokusere på vår
-      indre lykke. Flesteparten av oss går i gjennom livet ved å definere
+      &quot;Du skjønner, det handler om å akseptere hva som er og fokusere på
+      vår indre lykke. Flesteparten av oss går i gjennom livet ved å definere
       istedenfor å akseptere. Vi gjør oss klare til kamp hver gang det er en sky
       på himmelen, uten å være klar over at vi kjemper en krig vi aldri kan
-      vinne."
+      vinne.&quot;
     </p>
     <br></br>
 
     <p>
-      "Det er to ulike måter å leve livet på. Vi kan bruke tiden vår på å streve
-      for å endre ting, eller vi kan slappe av og akseptere ting som de er."
+      &quot;Det er to ulike måter å leve livet på. Vi kan bruke tiden vår på å
+      streve for å endre ting, eller vi kan slappe av og akseptere ting som de
+      er.&quot;
     </p>
     <br></br>
 
-    <p>"Du ser forvirret ut. La meg utdype."</p>
+    <p>&quot;Du ser forvirret ut. La meg utdype.&quot;</p>
     <br></br>
 
     <p>
-      "Som med regnet, er det mange ting i verden du ikke liker. Disse tingene
-      gjentar seg. Hvis du alltid skal fikse det du ikke liker vil du aldri få
-      fred. Med mindre du fikser det ved roten. Og roten er deg selv, den ligger
-      i hodet ditt, det eneste stedet problemer oppstår."
+      &quot;Som med regnet, er det mange ting i verden du ikke liker. Disse
+      tingene gjentar seg. Hvis du alltid skal fikse det du ikke liker vil du
+      aldri få fred. Med mindre du fikser det ved roten. Og roten er deg selv,
+      den ligger i hodet ditt, det eneste stedet problemer oppstår.&quot;
     </p>
     <br></br>
 
     <p>
-      "For et problem er en konflikt mellom tanker. Noe er på én måte, samtidig
-      som du ønsker at det skulle vært på en annen. Hvis du slutter å ønske at
-      det skulle vært annerledes, finnes det ikke lenger en konflikt, og ikke
-      lenger et problem. Og på en problemfri himmel kan lykken skinne."
+      &quot;For et problem er en konflikt mellom tanker. Noe er på én måte,
+      samtidig som du ønsker at det skulle vært på en annen. Hvis du slutter å
+      ønske at det skulle vært annerledes, finnes det ikke lenger en konflikt,
+      og ikke lenger et problem. Og på en problemfri himmel kan lykken
+      skinne.&quot;
     </p>
     <br></br>
 

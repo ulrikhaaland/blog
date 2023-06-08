@@ -12,6 +12,14 @@ import {
   PostJVIAS,
   PostF,
 } from '@/data/blog';
+import BlogPostF from '@/pages/blog/fremtiden';
+import BlogPostGU from '@/pages/blog/gaming-utveien';
+import BlogPostHOHSH from '@/pages/blog/hvordan-overtale-hvem-som-helst';
+import BlogPostJVIAS from '@/pages/blog/jeg-var-ikke-alltid-slik';
+import BlogPostLH from '@/pages/blog/lykke-hierarkiet';
+import BlogPostMSF from '@/pages/blog/min-storste-forbrytelse';
+import BlogPostTNL from '@/pages/blog/tre-nyttige-loyner';
+import BlogPostDEAK from '../pages/blog/det-er-alltid-krig';
 
 export interface CustomRoute {
   path: string;
@@ -50,48 +58,48 @@ export const defaultRoutes: CustomRoute[] = [
   {
     path: 'blog/min-storste-forbrytelse',
     title: 'MSF',
-    element: <PostMSF />,
+    element: <BlogPostMSF />,
   },
 
   {
     path: 'blog/lykke-hierarkiet',
     title: 'lykkehierarkiet',
-    element: <PostLH />,
+    element: <BlogPostLH />,
   },
   {
     path: 'blog/det-er-alltid-krig',
     title: 'deteralltidkrig',
-    element: <PostDEAK />,
+    element: <BlogPostDEAK />,
   },
   {
     path: 'blog/gaming-utveien',
     title: 'gamingutveien',
-    element: <PostGU />,
+    element: <BlogPostGU />,
   },
   {
     path: 'blog/tre-nyttige-loyner',
     title: 'trenyttigeloyner',
-    element: <PostTNL />,
+    element: <BlogPostTNL />,
   },
   {
     path: 'blog/hvordan-overtale-hvem-som-helst',
     title: 'hvordanovertalehvemsomhelst',
-    element: <PostHOHSH />,
+    element: <BlogPostHOHSH />,
   },
   {
     path: 'blog/jeg-var-ikke-alltid-slik',
     title: 'jegvarikkealltidslik',
-    element: <PostJVIAS />,
+    element: <BlogPostJVIAS />,
   },
   {
     path: 'blog/fremtiden',
     title: 'fremtiden',
-    element: <PostF />,
+    element: <BlogPostF />,
   },
   {
     path: 'blog/gode-forklaringer',
     title: 'godeforklaringer',
-    element: <PostForklaringer />,
+    element: <BlogPostF />,
   },
 ];
 

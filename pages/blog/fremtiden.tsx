@@ -60,10 +60,10 @@ const content = (
     <p>
       Verden har forvandlet seg, og med den meg selv. Begrensningene jeg en gang
       kjente på har nå forsvunnet og blitt erstattet med en ubegrenset
-      selvtillit, som om jeg har svelget pillen fra filmklassikeren "Limitless."
-      Jeg er gjenfødt i en verden formet av våre egne hender, en verden hvor
-      løsninger får mer oppmerksomhet enn problemer. En verden jeg ser frem til
-      å våkne opp i.
+      selvtillit, som om jeg har svelget pillen fra filmklassikeren
+      &quot;Limitless.&quot; Jeg er gjenfødt i en verden formet av våre egne
+      hender, en verden hvor løsninger får mer oppmerksomhet enn problemer. En
+      verden jeg ser frem til å våkne opp i.
     </p>
   </>
 );

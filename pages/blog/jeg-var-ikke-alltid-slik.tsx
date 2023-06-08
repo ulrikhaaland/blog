@@ -34,7 +34,7 @@ const content = (
     <p>Pusten kjapp. Hjertet flimrer. Tiden stanser.</p>
     <br></br>
 
-    <p>Lepper, skjelvende. Hvisker. "Våkn opp."</p>
+    <p>Lepper, skjelvende. Hvisker. &quot;Våkn opp.&quot;</p>
     <br></br>
     <p
       style={{

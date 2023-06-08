@@ -25,9 +25,9 @@ const content = (
 
     <p>
       Flyttingen går fortere enn forventet. Jeg graver litt i en av Ikea posene,
-      napper ut boken "Influence" og kaster meg i sofaen. Boken, skrevet av
-      psykologen Robert Cialdini, beskriver hvordan du kan påvirke andre
-      mennesker til å handle i din favør.
+      napper ut boken &quot;Influence&quot; og kaster meg i sofaen. Boken,
+      skrevet av psykologen Robert Cialdini, beskriver hvordan du kan påvirke
+      andre mennesker til å handle i din favør.
     </p>
     <br></br>
 
@@ -121,7 +121,7 @@ const content = (
       Arbeidsvisum. Under vanlige omstendigheter er dette enkelt å skaffe, men
       på grunn av et kinesisk eksperiment måtte vi søke assistanse. En
       Amerikansk advokat, han sendte over en punktliste. Det første punktet:
-      "Rent rulleblad." Det andre punktet: "Første punktet."
+      &quot;Rent rulleblad.&quot; Det andre punktet: &quot;Første punktet.&quot;
     </p>
     <br></br>
 
@@ -177,10 +177,10 @@ const content = (
     <br></br>
     <p>
       For når du er våken så kan du begynne å stille de meningsfulle
-      spørsmålene, de som byr på langvarige svar: "Så hvis alt jeg gjør er noe
-      jeg gjør for en følelse, hva burde jeg gjøre?" du burde gjøre det du
-      definerer som suksess. Det er der du vil finne tilfredstillelse. Hvis du
-      tror suksess avhenger av rikdom, skaff penger. Hvis du tror suksess
+      spørsmålene, de som byr på langvarige svar: &quot;Så hvis alt jeg gjør er
+      noe jeg gjør for en følelse, hva burde jeg gjøre?&quot; du burde gjøre det
+      du definerer som suksess. Det er der du vil finne tilfredstillelse. Hvis
+      du tror suksess avhenger av rikdom, skaff penger. Hvis du tror suksess
       avhenger av status, skaff følgere.
     </p>
     <br></br>
@@ -233,9 +233,10 @@ const content = (
     <p>
       Bak bilen, i sivile klær, står to blanke skaller. Hadde avstanden vært
       større kunne jeg mistolket begge to for å være onkelen min, samtidig. Han
-      ene med skjegget, han spør meg, "kollegaen min der oppe, han prøvde å
-      vinke deg inn, hvorfor stoppet du ikke?" jeg later som jeg tenker meg
-      om... "Han der ja, han så jeg ikke før jeg hadde nådd sperrelinjen."
+      ene med skjegget, han spør meg, &quot;kollegaen min der oppe, han prøvde å
+      vinke deg inn, hvorfor stoppet du ikke?&quot; jeg later som jeg tenker meg
+      om... &quot;Han der ja, han så jeg ikke før jeg hadde nådd
+      sperrelinjen.&quot;
     </p>
     <br></br>
 
@@ -257,12 +258,13 @@ const content = (
     <br></br>
 
     <p>
-      "Har du drukket?" spør han. "Nei," svarer jeg. Han holder opp måleren. Jeg
-      tar et kjapt innpust og begynner å blåse. "Hardere," sier han, flere
-      ganger. Og for hver gang han sier det, blåser jeg litt svakere, bare så
-      jeg kan høre han si det, igjen og igjen. "Hardere, hardere, hardereeee!"
-      Jeg mister det — tanken på å si noe jeg ikke burde si blir for mye for
-      meg. Jeg ber om unnskyldning og prøver igjen. Denne gangen går det.
+      &quot;Har du drukket?&quot; spør han. &quot;Nei,&quot; svarer jeg. Han
+      holder opp måleren. Jeg tar et kjapt innpust og begynner å blåse.
+      &quot;Hardere,&quot; sier han, flere ganger. Og for hver gang han sier
+      det, blåser jeg litt svakere, bare så jeg kan høre han si det, igjen og
+      igjen. &quot;Hardere, hardere, hardereeee!&quot; Jeg mister det — tanken
+      på å si noe jeg ikke burde si blir for mye for meg. Jeg ber om
+      unnskyldning og prøver igjen. Denne gangen går det.
     </p>
     <br></br>
 
@@ -273,21 +275,21 @@ const content = (
     <br></br>
 
     <p>
-      "Vet du hva dette er?" spør Skjegget. "En kortterminal?" svarer jeg. "Nei.
-      Dette er et apparat som avslører bruk av ulovlige rusmidler," forklarer
-      han, og ser meg dypt inn i øynene. Jeg vet hva han driver med. Han ser
-      etter en mikro-reaksjon: Et halvt sekund der masken kommer av og jeg
-      avslører mine sanne følelser. Robert Cialdini, han psykologen, han snakker
-      om dette.
+      &quot;Vet du hva dette er?&quot; spør Skjegget. &quot;En
+      kortterminal?&quot; svarer jeg. &quot;Nei. Dette er et apparat som
+      avslører bruk av ulovlige rusmidler,&quot; forklarer han, og ser meg dypt
+      inn i øynene. Jeg vet hva han driver med. Han ser etter en mikro-reaksjon:
+      Et halvt sekund der masken kommer av og jeg avslører mine sanne følelser.
+      Robert Cialdini, han psykologen, han snakker om dette.
     </p>
     <br></br>
 
     <p>
-      Han fortsetter. "Da jeg var inne i bilen i stad sjekket jeg førerkortet
-      ditt mot registeret vårt. Vet du hva jeg fant?" jeg tenker meg om, denne
-      gangen uten å late som... "Du fant vel et tilfelle av offentlig drikking?"
-      svarer jeg. "Det er riktig, men jeg fant også en ting til. Kan du tenke
-      deg hva?"
+      Han fortsetter. &quot;Da jeg var inne i bilen i stad sjekket jeg
+      førerkortet ditt mot registeret vårt. Vet du hva jeg fant?&quot; jeg
+      tenker meg om, denne gangen uten å late som... &quot;Du fant vel et
+      tilfelle av offentlig drikking?&quot; svarer jeg. &quot;Det er riktig, men
+      jeg fant også en ting til. Kan du tenke deg hva?&quot;
     </p>
     <br></br>
 
@@ -336,9 +338,10 @@ const content = (
 
     <p>
       Jeg spør politimannen om jeg kan snu meg, men uten hell. Jeg prøver igjen:
-      "Jeg har naboer som kjører forbi på rekke og rad her, er det koolt at
-      jeg—" "Sett deg inn bilen," sier han avbrytende. Jeg hopper inn i
-      baksetet, for ingenting kan være verre enn at naboen ser meg i håndjern.
+      &quot;Jeg har naboer som kjører forbi på rekke og rad her, er det koolt at
+      jeg—&quot; &quot;Sett deg inn bilen,&quot; sier han avbrytende. Jeg hopper
+      inn i baksetet, for ingenting kan være verre enn at naboen ser meg i
+      håndjern.
     </p>
     <br></br>
 
@@ -380,8 +383,8 @@ const content = (
     <p>
       Kaldsvettende i baksetet. Ventende på gjenopplivningen av en sliten
       iPhone. Her er jeg og her forblir jeg... Helt til innsatslederen får en
-      briljant idé. For "hvorfor vente på telefonen når vi har en politistudent
-      med i miksen?"
+      briljant idé. For &quot;hvorfor vente på telefonen når vi har en
+      politistudent med i miksen?&quot;
     </p>
     <br></br>
 
@@ -390,42 +393,44 @@ const content = (
       jeg beordret til å gjennomføre noen tester, så studenten skulle få erfare
       en tenåring i ruspåvirket tilstand. Som følge av dette ble jeg bedt om å
       lukke øyne, telle til tredve, gå noen skritt, åpne de opp, for så å bli
-      lyst i trynet med en lommelykt. "Ekte kriminell." Det føltes sånn.
+      lyst i trynet med en lommelykt. &quot;Ekte kriminell.&quot; Det føltes
+      sånn.
     </p>
     <br></br>
 
     <p>
       Jeg forteller Skjegget at jeg tidligere har blitt fersket for å tukle med
       min egen biokjemi. Han nikker bekreftende og drar en lapp ut av den
-      håndholdte maskinen. "Denne skal jeg skrape på tungen din," forklarer han.
-      Jeg geiper og eksponerer en hvit tunge som lyser av fordøyelsesproblemer.
-      Han tar en kjapp rens, plasserer lappen tilbake i maskinen og går mot
-      bilen sin.
+      håndholdte maskinen. &quot;Denne skal jeg skrape på tungen din,&quot;
+      forklarer han. Jeg geiper og eksponerer en hvit tunge som lyser av
+      fordøyelsesproblemer. Han tar en kjapp rens, plasserer lappen tilbake i
+      maskinen og går mot bilen sin.
     </p>
     <br></br>
 
     <p>
       I mellomtiden små-prater jeg med den skjeggløse, helt til bukselommen hans
       begynner å dure. Han snur seg og setter mobilen til øret. Etter en kjapp
-      telefonsamtale vender han seg mot meg. "Kollegaen min, han som prøvde å
-      vinke deg inn, det var han som ringte. Etter hendelsen, da du valgte å
+      telefonsamtale vender han seg mot meg. &quot;Kollegaen min, han som prøvde
+      å vinke deg inn, det var han som ringte. Etter hendelsen, da du valgte å
       ikke stoppe selv da han signaliserte for det, bestemte han seg for å ta en
-      telefon til politiadvokaten." "Etter jeg valgte å ikke stoppe? Jeg så han
-      ikke før jeg var ved sperrelinjen," forklarer jeg. "Jajaja, jeg hører hva
-      du sier. Uansett, han ringte politiadvokaten, og sammen konkluderte de med
-      å beslaglegge førerkortet ditt, på stedet."
+      telefon til politiadvokaten.&quot; &quot;Etter jeg valgte å ikke stoppe?
+      Jeg så han ikke før jeg var ved sperrelinjen,&quot; forklarer jeg.
+      &quot;Jajaja, jeg hører hva du sier. Uansett, han ringte politiadvokaten,
+      og sammen konkluderte de med å beslaglegge førerkortet ditt, på
+      stedet.&quot;
     </p>
     <br></br>
 
     <p>
       Jeg kan ikke tro hva jeg hører. Etter noen sekunder med gapende munn og
       livløse øyne spør jeg han om å gjenta seg. Han bekrefter utfallet og
-      tillegger en forklaring, "han som prøvde å vinke deg inn, han mente at du
-      kjørte uforsvarlig. At du kjørte så nærme at han fryktet for livet sitt."
-      "Uforsvarlig?" sier jeg spørrende, "Hvordan kan jeg kjøre uforsvarlig
-      nærme noen som står utenfor kjørefeltet? Mener han at jeg har kjørt
-      utenfor veien?" "Det blir opp til retten å vurdere," sier han. "Bra,"
-      svarer jeg.
+      tillegger en forklaring, &quot;han som prøvde å vinke deg inn, han mente
+      at du kjørte uforsvarlig. At du kjørte så nærme at han fryktet for livet
+      sitt.&quot; &quot;Uforsvarlig?&quot; sier jeg spørrende, &quot;Hvordan kan
+      jeg kjøre uforsvarlig nærme noen som står utenfor kjørefeltet? Mener han
+      at jeg har kjørt utenfor veien?&quot; &quot;Det blir opp til retten å
+      vurdere,&quot; sier han. &quot;Bra,&quot; svarer jeg.
     </p>
     <br></br>
 
@@ -439,11 +444,11 @@ const content = (
     <br></br>
 
     <p>
-      "Jeg har gode og dårlige nyheter. Hva vil du ha først?" spør Skjegget. "I
-      og med at jeg nettopp har fått beskjed om at lappen er beslaglagt, tenker
-      jeg at vi tar den utradisjonelle rekkefølgen," svarer jeg. "Ok. Maskinen
-      ga ikke utslag på marihuana," jeg puster lettet ut, "men den ga utslag på
-      noe annet."
+      &quot;Jeg har gode og dårlige nyheter. Hva vil du ha først?&quot; spør
+      Skjegget. &quot;I og med at jeg nettopp har fått beskjed om at lappen er
+      beslaglagt, tenker jeg at vi tar den utradisjonelle rekkefølgen,&quot;
+      svarer jeg. &quot;Ok. Maskinen ga ikke utslag på marihuana,&quot; jeg
+      puster lettet ut, &quot;men den ga utslag på noe annet.&quot;
     </p>
     <br></br>
 
@@ -463,20 +468,20 @@ const content = (
     <br></br>
 
     <p>
-      "CO, det er det du tror det er, altså, forkortelsen for kokain," sier han.
-      Og det er da det går opp for meg, at det var i går, under utflyttingen av
-      leiligheten, at jeg kom over en pose med kokain. I og med at
-      kalori-budsjettet mitt var tomt — grunnet uforsvarlig pizza-fråtsing fra
-      dagen før — tenkte jeg at kunne tillate meg en linje, men siden moren min
-      var tilstede så tømte jeg heller innholdet i munnen.
+      &quot;CO, det er det du tror det er, altså, forkortelsen for kokain,&quot;
+      sier han. Og det er da det går opp for meg, at det var i går, under
+      utflyttingen av leiligheten, at jeg kom over en pose med kokain. I og med
+      at kalori-budsjettet mitt var tomt — grunnet uforsvarlig pizza-fråtsing
+      fra dagen før — tenkte jeg at kunne tillate meg en linje, men siden moren
+      min var tilstede så tømte jeg heller innholdet i munnen.
     </p>
     <br></br>
 
     <p>
-      "Det som skjer nå er at det kommer en utrykningsbil, den kjører deg til
-      legevakten, der tar du blodprøve," befaler Skjegget. "Det er forstått, men
-      hva med bilen min?" sier jeg. "Den blir tauet, med mindre du kan få noen
-      til å plukke den opp, asap."
+      &quot;Det som skjer nå er at det kommer en utrykningsbil, den kjører deg
+      til legevakten, der tar du blodprøve,&quot; befaler Skjegget. &quot;Det er
+      forstått, men hva med bilen min?&quot; sier jeg. &quot;Den blir tauet, med
+      mindre du kan få noen til å plukke den opp, asap.&quot;
     </p>
     <br></br>
 
@@ -491,10 +496,10 @@ const content = (
       Jeg gir henne en kjapp forklaring av omstendighetene og spør om de kan
       komme å plukke opp bilen. Mobilen treffer bordet. Jeg hører ikke hva som
       blir sagt, men skjønner at søsteren min forklarer situasjonen. Plutselig
-      roper mamma, "BLODPRØVE?!" Det blir helt stille. Jeg ser for meg søsteren
-      min i dyp øyekontakt med mamma samtidig som hun hever skuldrene på en
-      "sånt skjer"-måte. Moren min, svak for genene sine, plukker opp telefonen
-      og forteller meg at de kommer øyeblikkelig.
+      roper mamma, &quot;BLODPRØVE?!&quot; Det blir helt stille. Jeg ser for meg
+      søsteren min i dyp øyekontakt med mamma samtidig som hun hever skuldrene
+      på en &quot;sånt skjer&quot;-måte. Moren min, svak for genene sine,
+      plukker opp telefonen og forteller meg at de kommer øyeblikkelig.
     </p>
     <br></br>
 
@@ -507,7 +512,7 @@ const content = (
     </p>
     <br></br>
 
-    <p>"Oooooooommm."</p>
+    <p>&quot;Oooooooommm.&quot;</p>
     <br></br>
 
     <p>
@@ -532,11 +537,11 @@ const content = (
     <p>
       Motstand av smerte, det er min definisjon på lidelse, og den stopper når
       du innser at smerte ikke trenger å unngåes, men forståes. For når
-      forståelsen kommer inn i bildet så forsvinner "smerten." Hvis du forsøker
-      å sitte med den, helt likegyldig, uten å motstå eller forsterke, uten å
-      dømme negativt eller positivt, så vil det komme et øyeblikk der du bare
-      gir slipp. Et øyeblikk der du tillater smerten å gå sin gang. Og før du
-      vet ordet av det så er den borte.
+      forståelsen kommer inn i bildet så forsvinner &quot;smerten.&quot; Hvis du
+      forsøker å sitte med den, helt likegyldig, uten å motstå eller forsterke,
+      uten å dømme negativt eller positivt, så vil det komme et øyeblikk der du
+      bare gir slipp. Et øyeblikk der du tillater smerten å gå sin gang. Og før
+      du vet ordet av det så er den borte.
     </p>
     <br></br>
 
@@ -669,8 +674,8 @@ const content = (
     <br></br>
 
     <p>
-      Han tar det første kastet, en skruball: "I mens jeg spør deg noen
-      spørsmål, kan du huske på dette tallet? 23217215."
+      Han tar det første kastet, en skruball: &quot;I mens jeg spør deg noen
+      spørsmål, kan du huske på dette tallet? 23217215.&quot;
     </p>
     <br></br>
 
@@ -709,11 +714,12 @@ const content = (
     <br></br>
 
     <p>
-      "Kan du gjenta det jeg ba deg huske i begynnelsen?" spør legen. "Michael
-      Jordan som spiller Blackjack, omringet av jomfruer med utseende til Taylor
-      Swift?" "hæ?"... "Åja... 23217215, mener jeg." Blondinen smiler. Jeg
-      smiler. "Er det noe du vil legge til?" spør legen. "Jeg har ikke spist på
-      over 40 timer."
+      &quot;Kan du gjenta det jeg ba deg huske i begynnelsen?&quot; spør legen.
+      &quot;Michael Jordan som spiller Blackjack, omringet av jomfruer med
+      utseende til Taylor Swift?&quot; &quot;hæ?&quot;... &quot;Åja... 23217215,
+      mener jeg.&quot; Blondinen smiler. Jeg smiler. &quot;Er det noe du vil
+      legge til?&quot; spør legen. &quot;Jeg har ikke spist på over 40
+      timer.&quot;
     </p>
     <br></br>
 
@@ -721,9 +727,9 @@ const content = (
       To kjappe innpust etterfulgt av et langt utpust, jeg går inn døren. Mamma
       sitter ved spisebordet med hodet i hendene. Jeg setter meg ned og
       forteller henne at jeg bærer dårlige nyheter. Jeg sier at jeg ble stoppet
-      med femti gram marihuana og at jeg muligens må sone tid. Hun hyler. "Bare
-      kødda," sier jeg, "hadde bare tatt noe kokain i helgen." Hun hyler
-      fortsatt.
+      med femti gram marihuana og at jeg muligens må sone tid. Hun hyler.
+      &quot;Bare kødda,&quot; sier jeg, &quot;hadde bare tatt noe kokain i
+      helgen.&quot; Hun hyler fortsatt.
     </p>
     <br></br>
 

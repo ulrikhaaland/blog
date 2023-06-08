@@ -157,9 +157,9 @@ const content = (
     </p>
     <br></br>
     <p>
-      For denne kan vi variere til hva enn vi måtte ønske: "Trening forbedrer
-      hjerte- og karsystemets helse fordi det får deg til å føle deg X, og å
-      føle seg X er alltid sunt."
+      For denne kan vi variere til hva enn vi måtte ønske: &quot;Trening
+      forbedrer hjerte- og karsystemets helse fordi det får deg til å føle deg
+      X, og å føle seg X er alltid sunt.&quot;
     </p>
     <br></br>
     <p>
@@ -189,9 +189,9 @@ const content = (
     </p>
     <br></br>
     <p>
-      For denne kan vi variere til hva enn vi måtte ønske: "Trening forbedrer
-      hjerte- og karsystemets helse fordi det får deg til å føle deg X, og å
-      føle seg X er alltid sunt."
+      For denne kan vi variere til hva enn vi måtte ønske: &quot;Trening
+      forbedrer hjerte- og karsystemets helse fordi det får deg til å føle deg
+      X, og å føle seg X er alltid sunt.&quot;
     </p>
     <br></br>
     <p>

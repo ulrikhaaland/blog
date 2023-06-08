@@ -1,22 +1,17 @@
 import '@/styles/globals.css';
 import { theme } from '@/theme';
 import { ThemeProvider } from '@emotion/react';
-import { Backdrop, Box } from '@mui/material';
+import { Box } from '@mui/material';
 import { Inter } from '@next/font/google';
-import { Provider, observer } from 'mobx-react';
+import { Provider } from 'mobx-react';
 import type { AppProps } from 'next/app';
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import React, { ReactElement, ReactNode, useEffect } from 'react';
 import { RootStoreProvider, useStore } from '@/RootStoreProvider';
 import LayoutPage from './LayoutPage';
 import { NextPage } from 'next';
-import Header from '@/components/Header';
-import Login from '@/components/Login';
-import LoggedIn from '@/components/Login/LoggedIn';
-import { useRouter, Router } from 'next/router';
 
 const inter = Inter({ subsets: ['latin'] });
 
