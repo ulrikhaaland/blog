@@ -49,6 +49,8 @@ const App = ({ Component, pageProps, router }: AppPropsWithLayout) => {
     if (!authStore.user && auth) authStore.checkAuth();
   }, [authStore]);
 
+  // node v
+
   return (
     <main className={inter.className}>
       <React.StrictMode>
