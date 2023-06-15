@@ -14,7 +14,7 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-const LayoutPage = ({ Component, pageProps }: AppPropsWithLayout) => {
+const LayoutPage = ({ Component, pageProps, router }: AppPropsWithLayout) => {
   const { authStore } = useStore();
 
   const { open, setOpen, user } = authStore;
