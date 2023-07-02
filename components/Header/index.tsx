@@ -167,7 +167,7 @@ function Header() {
             style={{ cursor: 'pointer' }}
             className='text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'
           >
-            Blogg 
+            Blogg
           </p>
           <p
             onClick={() => router.push('/tools')}
@@ -176,9 +176,13 @@ function Header() {
           >
             Verktøy
           </p>
-          {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
-          </a> */}
+          <p
+            onClick={() => router.push('/knowledge')}
+            style={{ cursor: 'pointer' }}
+            className='text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'
+          >
+            Kunnskap
+          </p>
         </Popover.Group>
         <div className='hidden lg:flex lg:flex-1 lg:justify-end f:r'>
           <p

@@ -93,7 +93,7 @@ const content = (
     <br></br>
 
     <p>
-      Kollegaen min, han driver å syter om skatt og sånt, så jeg tar han med ut
+      Kollegaen min, han driver å syter om skatt å sånt, så jeg tar han med ut
       på Oslofjorden. Jeg forteller han at det finnes flere måter å stemme seg
       til mindre skatt. Jeg gir han en øl. Jeg forteller han at det mest
       effektive, det er å stemme med føttene — å flytte. Jeg gir han tredve
@@ -172,16 +172,16 @@ const content = (
     <br></br>
 
     <p>
-      Alle de filosofene, de som snakker om å våkne opp, det er dette dem mener.
+      Alle de filosofene, de som snakker om å våkne opp, det er dette de mener.
     </p>
     <br></br>
     <p>
       For når du er våken så kan du begynne å stille de meningsfulle
       spørsmålene, de som byr på langvarige svar: &quot;Så hvis alt jeg gjør er
-      noe jeg gjør for en følelse, hva burde jeg gjøre?&quot; du burde gjøre det
-      du definerer som suksess. Det er der du vil finne tilfredstillelse. Hvis
-      du tror suksess avhenger av rikdom, skaff penger. Hvis du tror suksess
-      avhenger av status, skaff følgere.
+      noe jeg gjør for en følelse. Hva er det jeg bør gjøre?&quot; du burde
+      gjøre det du definerer som suksess. Det er der du vil finne
+      tilfredstillelse. Hvis du tror suksess avhenger av rikdom, skaff penger.
+      Hvis du tror suksess avhenger av status, skaff følgere.
     </p>
     <br></br>
 
@@ -223,10 +223,11 @@ const content = (
     <br></br>
 
     <p>
-      I mens jeg fikler frem det digitale førerkortet tar jeg et kjapt blikk i
-      speilet og ser en mann komme gående mot bilen. Jeg ruller ned vinduet i
-      avvente på at han skal ankomme... Den svarte søppelsekken i passasjersetet
-      tydeliggjør et stort hvitt hode. Et hode som kommanderer meg ut av bilen.
+      Samtidig som jeg fikler frem det digitale førerkortet tar jeg et kjapt
+      blikk i speilet og ser en mann komme gående mot bilen. Jeg ruller ned
+      vinduet i avvente på at han skal ankomme... Den svarte søppelsekken i
+      passasjersetet tydeliggjør et stort hvitt hode. Et hode som kommanderer
+      meg ut av bilen.
     </p>
     <br></br>
 
@@ -241,12 +242,12 @@ const content = (
     <br></br>
 
     <p>
-      Jeg rekker ikke fullføre setningen før gutta blikker hverandre. Jeg kan
-      se, at de ser, at noe ikke stemmer. De flytter seg litt unna. Etter en
-      kort prat går Skjegget mot bilen sin. Han andre kommer tilbake til meg.
-      Den skjeggløse forteller meg at de utførte en fartsmåling like før
-      fotoboksen. Han sier at jeg ble målt til hundre i åtti-sonen, og at dette
-      var grunnen til at de forsøkte å stoppe meg.
+      Jeg rekker ikke fullføre setningen før gutta blikker hverandre. Jeg kan se
+      de ser at noe ikke stemmer. De flytter seg litt unna. Etter en kort prat
+      går Skjegget mot bilen sin. Han andre kommer tilbake til meg. Den
+      skjeggløse forteller meg at de utførte en fartsmåling like før fotoboksen.
+      Han sier at jeg ble målt til hundre i åtti-sonen, og at dette var grunnen
+      til at de forsøkte å stoppe meg.
     </p>
     <br></br>
 
@@ -276,7 +277,7 @@ const content = (
 
     <p>
       &quot;Vet du hva dette er?&quot; spør Skjegget. &quot;En
-      kortterminal?&quot; svarer jeg. &quot;Nei. Dette er et apparat som
+      kortterminal?&quot; svarer jeg. Han &quot;Nei. Dette er et apparat som
       avslører bruk av ulovlige rusmidler,&quot; forklarer han, og ser meg dypt
       inn i øynene. Jeg vet hva han driver med. Han ser etter en mikro-reaksjon:
       Et halvt sekund der masken kommer av og jeg avslører mine sanne følelser.
@@ -332,7 +333,7 @@ const content = (
       Etter ransaking blir jeg videre utspurt. Men jeg er så ukonsentrert at jeg
       knapt klarer å svare. Ikke fordi jeg er panzer, men på grunn av alle
       bilene som kjører forbi. For her står jeg, i håndjern, så nærme bilveien,
-      at jeg nesten etablerer øyekontakt med passerende naboer.
+      at jeg nærmest etablerer øyekontakt med passerende naboer.
     </p>
     <br></br>
 
@@ -340,17 +341,17 @@ const content = (
       Jeg spør politimannen om jeg kan snu meg, men uten hell. Jeg prøver igjen:
       &quot;Jeg har naboer som kjører forbi på rekke og rad her, er det koolt at
       jeg—&quot; &quot;Sett deg inn bilen,&quot; sier han avbrytende. Jeg hopper
-      inn i baksetet, for ingenting kan være verre enn at naboen ser meg i
+      inn i baksetet, for det kan ikke bli verre enn at naboene ser meg i
       håndjern.
     </p>
     <br></br>
 
     <p>
-      Politimannen følger etter. Fra førersetet forteller han meg at siden jeg
-      har blitt tatt for å øke livskvaliteten min ved bruk av en busk som er
-      hundre ganger mindre ødeleggende enn det halvparten av populasjonen heller
-      nedpå hver eneste kveld at han derfor er pliktig til å gjennomsøke mobilen
-      min. Jeg nøler — i håp om å bli truffet av en tanke som kan opplyse meg om
+      Politimannen følger etter. Fra førersetet forteller han meg at han er
+      pliktig til å ta en titt på mobiltelefonen min. Fordi jeg har blitt tatt
+      for å øke livskvalitet min ved bruk av en busk som er hundre ganger mindre
+      skadelig enn det halvparten av populasjon heller nedpå hver eneste kveld.
+      Jeg nøler — i håp om å bli truffet av en tanke som kan opplyse meg om
       hvorfor dette er ulovlig.
     </p>
     <br></br>
@@ -494,7 +495,7 @@ const content = (
 
     <p>
       Jeg gir henne en kjapp forklaring av omstendighetene og spør om de kan
-      komme å plukke opp bilen. Mobilen treffer bordet. Jeg hører ikke hva som
+      komme og plukke opp bilen. Mobilen treffer bordet. Jeg hører ikke hva som
       blir sagt, men skjønner at søsteren min forklarer situasjonen. Plutselig
       roper mamma, &quot;BLODPRØVE?!&quot; Det blir helt stille. Jeg ser for meg
       søsteren min i dyp øyekontakt med mamma samtidig som hun hever skuldrene
@@ -504,7 +505,7 @@ const content = (
     <br></br>
 
     <p>
-      Jeg overleverer bilnøkkelen å setter meg tilbake i bilen. Bilruten, den
+      Jeg overleverer bilnøkkelen og setter meg tilbake i bilen. Bilruten, den
       jeg åpnet da jeg så Skjegget komme gående mot bilen, den er fortsatt
       nedrullet. Nøkkelen? Den har ikke jeg. Enveiskjørt vei, bilen parkert helt
       inntil veien, forbipasserende biler, kulde, bråk og eksos? Bra. Jeg lener
@@ -536,7 +537,7 @@ const content = (
 
     <p>
       Motstand av smerte, det er min definisjon på lidelse, og den stopper når
-      du innser at smerte ikke trenger å unngåes, men forståes. For når
+      du innser at smerte ikke trenger å unngås, men forståes. For når
       forståelsen kommer inn i bildet så forsvinner &quot;smerten.&quot; Hvis du
       forsøker å sitte med den, helt likegyldig, uten å motstå eller forsterke,
       uten å dømme negativt eller positivt, så vil det komme et øyeblikk der du
@@ -595,10 +596,10 @@ const content = (
 
     <p>
       Han fyren der, han hadde sikkert den blåeste mandagen. Kanskje han nettopp
-      sluttet å røyke å trengte en måte å frigi spenningen på. Kanskje han
+      sluttet å røyke og trengte en måte å frigi spenningen på. Kanskje han
       nettopp fikk vite at prostataforstørrelsen, den som ble oppdaget for noen
       dager siden, var av den ondartede varianten. Kanskje kona hans nettopp
-      utøvde frikortet å banga Adrian Sellevoll som skrapte plater på helgens
+      utøvde frikortet og banga Adrian Sellevoll som skrapte plater på helgens
       jobbfest.
     </p>
     <br></br>
@@ -629,7 +630,7 @@ const content = (
     <br></br>
 
     <p>
-      Jeg tenker på tanken av å selge Bitcoin for å betale saksomkostninger. Jeg
+      Jeg tenker på tanken om å selge Bitcoin for å betale saksomkostninger. Jeg
       tenker på renten til forbrukslån (hodl).
     </p>
     <br></br>
@@ -666,10 +667,11 @@ const content = (
     <br></br>
 
     <p>
-      Så dukker legen opp. Han setter seg ned på kanten av sykesengen, rett
-      ovenfor meg. I hånden holder han noe kjent. Oppskriften på hvordan man kan
-      avsløre mennesker som har omkoblet virkelighetens mentale kretsløp. Jeg
-      har sett den før. Men denne gangen er jeg forberedt. La oss spille.
+      Til slutt dukker legen opp. Han setter seg ned på kanten av sykesengen,
+      rett ovenfor meg. I hånden holder han noe kjent. Oppskriften på hvordan
+      man kan avsløre mennesker som har omkoblet virkelighetens mentale
+      kretsløp. Jeg har sett den før. Men denne gangen er jeg forberedt. La oss
+      spille.
     </p>
     <br></br>
 
@@ -718,7 +720,7 @@ const content = (
       &quot;Michael Jordan som spiller Blackjack, omringet av jomfruer med
       utseende til Taylor Swift?&quot; &quot;hæ?&quot;... &quot;Åja... 23217215,
       mener jeg.&quot; Blondinen smiler. Jeg smiler. &quot;Er det noe du vil
-      legge til?&quot; spør legen. &quot;Jeg har ikke spist på over 40
+      legge til?&quot; Spør legen. &quot;Jeg har ikke spist på over 40
       timer.&quot;
     </p>
     <br></br>

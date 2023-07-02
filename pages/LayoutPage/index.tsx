@@ -1,12 +1,9 @@
 import { Backdrop } from '@mui/material';
 import Header from '../../components/Header';
-import { Route, Routes } from 'react-router-dom';
-import { CustomRoute, defaultRoutes } from '../../routers/routes';
 import Login from '../../components/Login';
 import { observer } from 'mobx-react';
 import LoggedIn from '../../components/Login/LoggedIn';
 import { useStore } from '../../RootStoreProvider';
-import { Component } from 'react';
 import { AppProps } from 'next/app';
 import { NextPageWithLayout } from '../_app';
 

@@ -3,8 +3,6 @@ import SectionTools from '../../components/Sections/Tools';
 import { NextPageWithLayout } from '../_app';
 
 const ToolsPage: NextPageWithLayout = () => {
-  console.log('gothere');
-
   return (
     <>
       <SectionTools homePage={false} />
