@@ -25,11 +25,9 @@ export default function SectionKnowledge({ homePage }: Props) {
             {homePage ? 'Fra bloggen' : 'Bøker'}
           </h2>
           <p className='mt-3 text-xl text-gray-500 sm:mt-4'>
-            Det beste du kan gjøre for deg selv er å lære. Den beste måten å
-            lære er ved å lese. Den beste måten å lese er bøker. De er på
-            engelsk. Slik gjør du det: Kjøp boken digitalt på Amazon. Les den på
-            engelsk. Når du ikke forstår noe, stopp, slå det opp, forstå, og
-            fortsett.
+            Det beste du kan gjøre for deg selv er å lære deg å lese på Engelsk.
+            Slik gjør du det: Kjøp boken digitalt på Amazon. Når du ikke forstår
+            noe, stopp, slå det opp, forstå, og fortsett.
           </p>
         </div>
 
