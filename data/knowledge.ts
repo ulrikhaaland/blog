@@ -20,6 +20,31 @@ import philImage from '../assets/books/thestoryofphilosophy.jpg';
 import whyImage from '../assets/books/why.jpg';
 import wisdomImage from '../assets/books/wisdom.jpg';
 
+import aiImage from '../assets/essays/ai.png';
+import alexanderImage from '../assets/essays/ai.png';
+import burnoutImage from '../assets/essays/burnout.png';
+import cancerImage from '../assets/essays/cancer.png';
+import codeImage from '../assets/essays/code.png';
+import circleImage from '../assets/essays/circle.png';
+import conformImage from '../assets/essays/conform.png';
+import disagreeImage from '../assets/essays/disagree.png';
+import expectedImage from '../assets/essays/expected.png';
+import expertImage from '../assets/essays/expert.png';
+import identityImage from '../assets/essays/identity.png';
+import keynesImage from '../assets/essays/keynes.png';
+import passionImage from '../assets/essays/passion.png';
+import seeImage from '../assets/essays/see.png';
+import shannonImage from '../assets/essays/shannon.png';
+import smartImage from '../assets/essays/smart.png';
+import solitudeImage from '../assets/essays/solitude.png';
+import stupidImage from '../assets/essays/stupid.png';
+import thinkImage from '../assets/essays/think.png';
+import tomorrowImage from '../assets/essays/tomorrow.png';
+import tyrantImage from '../assets/essays/tyrant.png';
+import workImage from '../assets/essays/work.png';
+import writerImage from '../assets/essays/writer.png';
+import readImage from '../assets/essays/read.png';
+
 export interface Books {
   title: string;
   href: string;
@@ -30,7 +55,7 @@ export interface Books {
   author: string;
 }
 
-export interface Essays {
+export interface Essay {
   title: string;
   href: string;
   image: StaticImageData | string;
@@ -253,5 +278,248 @@ export const bookList: Books[] = [
     date: '1968-01-01',
     category: 'History',
     author: 'Will Durant',
+  },
+];
+
+export const essayList: Essay[] = [
+  {
+    title: "What's expected of us",
+    href: 'https://www.nature.com/articles/436150a',
+    image: historyImage,
+    description:
+      'A thought-provoking essay that explores free will and determinism through an experiment that reveals our inability to predict our own choices.',
+    date: '2005-07-06',
+    category: 'Science',
+    author: 'Ted Chiang',
+  },
+  {
+    title: 'Solitude and Leadership',
+    href: 'https://theamericanscholar.org/solitude-and-leadership/#.XzLH1igzYuV',
+    image: solitudeImage,
+    description:
+      'If you want others to follow, learn to be alone with your thoughts.',
+    date: '2010-03-01',
+    category: 'Leadership',
+    author: 'William Deresiewicz',
+  },
+  {
+    title: 'The Four Quadrants of Conformism',
+    href: 'http://paulgraham.com/conformism.html',
+    image: conformImage,
+    description:
+      'One of the most revealing ways to classify people is by the degree and aggressiveness of their conformism.',
+    date: '2020-07-01',
+    category: 'Psychology',
+    author: 'Paul Graham',
+  },
+  {
+    title: 'The Only Path To Tomorrow',
+    href: 'http://fare.tunes.org/liberty/library/toptt.html',
+    image: tomorrowImage,
+    description:
+      'The greatest threat to mankind and civilization is the spread of the totalitarian philosophy. Its best ally is not the devotion of its followers but the confusion of its enemies. To fight it, we must understand it.',
+    date: '1944-01-01',
+    category: 'Philosophy',
+    author: 'Ayn Rand',
+  },
+  {
+    title: 'The Fable of the Dragon-Tyrant',
+    href: 'https://nickbostrom.com/fable/dragon',
+    image: tyrantImage,
+    description:
+      'Once upon a time, the planet was tyrannized by a giant dragon.',
+    date: '2005-01-01',
+    category: 'Philosophy',
+    author: 'Nick Bostrom',
+  },
+  {
+    title: 'How to Think for Yourself',
+    href: 'http://paulgraham.com/think.html',
+    image: thinkImage,
+    description:
+      "There are some kinds of work that you can't do well without thinking differently from your peers.",
+    date: '2020-11-01',
+    category: 'Psychology',
+    author: 'Paul Graham',
+  },
+  {
+    title: 'Wet code and dry',
+    href: 'http://unenumerated.blogspot.com/2006/11/wet-code-and-dry.html',
+    image: codeImage,
+    description:
+      "There's a strong distinction to be made between 'wet code,' interpreted by the brain, and 'dry code,' interpreted by computers.",
+    date: '2008-08-01',
+    category: 'Computer Science',
+    author: 'Nick Szabo',
+  },
+  {
+    title:
+      'Understanding your Circle of Competence: How Warren Buffett Avoids Problems',
+    href: 'https://fs.blog/circle-of-competence/',
+    image: circleImage,
+    description:
+      "The circle of competence is a simple idea: know what you know and know what you don't know.",
+    date: '2013-01-01',
+    category: 'Business',
+    author: 'Shane Parrish',
+  },
+  {
+    title: 'How Claude Shannon Invented the Future',
+    href: 'https://www.quantamagazine.org/how-claude-shannons-information-theory-invented-the-future-20201222/',
+    image: shannonImage,
+    description:
+      'Today’s information age is only possible thanks to the groundbreaking work of a lone genius.',
+    date: '2020-12-22',
+    category: 'Computer Science',
+    author: 'David Tse',
+  },
+  {
+    title: 'Keynes’s ‘Beauty Contest’',
+    href: 'https://www.chicagobooth.edu/review/keyness-beauty-contest',
+    image: keynesImage,
+    description:
+      'John Maynard Keynes is remembered for his view that governments should spend money in recessions to regain full employment, an argument made famous in his 1936 book The General Theory of Employment, Interest, and Money. Few, however, realize that Keynes was a true forerunner of behavioral finance.',
+    date: '2015-09-02',
+    category: 'Economics',
+    author: 'Richard Thaler',
+  },
+  {
+    title:
+      'Getting unstuck - physically and philosophically - with Alexander Technique',
+    href: 'https://expandingawareness.org/blog/getting-unstuck-physically-and-philosophically-with-alexander-technique/',
+    image: alexanderImage,
+    description:
+      '(John) Dewey considered that the Alexander Technique provided a demonstration of the unity of body and mind. With progress as a pupil, he reported an improvement in his vision and in his breathing and in ability to hold a philosophical position calmly with ability to change it if new evidence warranted."',
+    date: '2020-12-01',
+    category: 'Self-Improvement',
+    author: 'Michael Ashcroft',
+  },
+  {
+    title: "I Woudldn't Start From Here — Recovering From Burnout",
+    href: 'https://www.michaelashcroft.org/notebook/i-wouldnt-start-from-here-recovering-from-burnout',
+    image: burnoutImage,
+    description:
+      'A traveller stops to ask a farmer the way to a small village. The farmer thinks for a while and then says "If you want to go there I would not start from here."',
+    date: '2021-02-19',
+    category: 'Self-Improvement',
+    author: 'Michael Ashcroft',
+  },
+  {
+    title: 'Keep Your Identity Small',
+    href: 'http://paulgraham.com/identity.html',
+    image: identityImage,
+    description:
+      'I finally realized today why politics and religion yield such uniquely useless discussions.',
+    date: '2009-02-01',
+    category: 'Psychology',
+    author: 'Paul Graham',
+  },
+  {
+    title: 'Screw Finding Your Passion',
+    href: 'https://markmanson.net/screw-finding-your-passion',
+    image: passionImage,
+    description: 'Remember back when you were a kid? You would just do things.',
+    date: '2010-09-01',
+    category: 'Self-Improvement',
+    author: 'Mark Manson',
+  },
+  {
+    title: "We'll see...",
+    href: 'http://tao-how.blogspot.com/2011/02/well-see.html',
+    image: seeImage,
+    description: "You'll see...",
+    date: '2011-02-01',
+    category: 'Psychology',
+    author: 'Tao',
+  },
+  {
+    title: 'How to Be an Expert in a Changing World',
+    href: 'http://www.paulgraham.com/ecw.html',
+    image: expertImage,
+    description:
+      'If the world were static, we could have monotonically increasing confidence in our beliefs.',
+    date: '2014-12-01',
+    category: 'Philosophy',
+    author: 'Paul Graham',
+  },
+  {
+    title: 'I’ll Tell You The Secret of Cancer',
+    href: 'https://www.theatlantic.com/health/archive/2021/08/caitlin-flanagan-secret-of-surviving-cancer/619844/',
+    image: cancerImage,
+    description:
+      'It’s been almost 20 years since my diagnosis, and I’ve learned quite a bit.',
+    date: '2021-08-23',
+    category: 'Helse',
+    author: 'Caitlin Flanagan',
+  },
+  {
+    title: 'Beyond Smart',
+    href: 'http://paulgraham.com/smart.html',
+    image: smartImage,
+    description:
+      'If you asked people what was special about Einstein, most would say that he was really smart.',
+    date: '2021-10-01',
+    category: 'Self-Improvement',
+    author: 'Paul Graham',
+  },
+  {
+    title: 'Willingness to look stupid',
+    href: 'https://danluu.com/look-stupid/',
+    image: stupidImage,
+    description:
+      "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
+    date: '2021-10-01',
+    category: 'Self-Improvement',
+    author: 'Dan Luu',
+  },
+  {
+    title: 'How to Disagree',
+    href: 'http://www.paulgraham.com/disagree.html',
+    image: disagreeImage,
+    description:
+      'The web is turning writing into a conversation. Twenty years ago, writers wrote and readers read. The web lets readers respond, and increasingly they do—in comment threads, on forums, and in their own blog posts.',
+    date: '2008-03-01',
+    category: 'Self-Improvement',
+    author: 'Paul Graham',
+  },
+  {
+    title: 'The Need to Read',
+    href: 'http://paulgraham.com/read.html',
+    image: readImage,
+    description:
+      "In the science fiction books I read as a kid, reading had often been replaced by some more efficient way of acquiring knowledge. Mysterious 'tapes' would load it into one's brain like a program being loaded into a computer.",
+    date: '2022-11-01',
+    category: 'Self-Improvement',
+    author: 'Paul Graham',
+  },
+  {
+    title: 'How to Do Great Work',
+    href: 'http://paulgraham.com/greatwork.html',
+    image: workImage,
+    description:
+      'If you collected lists of techniques for doing great work in a lot of different fields, what would the intersection look like? I decided to find out by making it.',
+    date: '2023-07-01',
+    category: 'Self-Improvement',
+    author: 'Paul Graham',
+  },
+  {
+    title: 'The Day You Became A Better Writer',
+    href: 'https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html',
+    image: writerImage,
+    description:
+      'I went from being a bad writer to a good writer after taking a one-day course in “business writing.” I couldn’t believe how simple it was. I’ll tell you the main tricks here so you don’t have to waste a day in class.',
+    date: '2007-06-16',
+    category: 'Self-Improvement',
+    author: 'Scott Adams',
+  },
+  {
+    title: 'Why AI Will Save the World',
+    href: 'https://a16z.com/2023/06/06/ai-will-save-the-world/',
+    image: aiImage,
+    description:
+      'The era of Artificial Intelligence is here, and boy are people freaking out.',
+    date: '2023-06-06',
+    category: 'Technology',
+    author: 'Marc Andreessen',
   },
 ];

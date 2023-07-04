@@ -10,7 +10,7 @@ interface Props {
   homePage: boolean;
 }
 
-export default function SectionKnowledge({ homePage }: Props) {
+export default function SectionBooks({ homePage }: Props) {
   return (
     <div
       className={'bg-white'}

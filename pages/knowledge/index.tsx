@@ -1,11 +1,11 @@
 import { ReactElement } from 'react';
-import SectionKnowledge from '../../components/Sections/Knowledge';
+import SectionBooks from '../../components/Sections/Books';
 import { NextPageWithLayout } from '../_app';
 
 const KnowledgePage: NextPageWithLayout = () => {
   return (
     <>
-      <SectionKnowledge homePage={false} />
+      <SectionBooks homePage={false} />
     </>
   );
 };
