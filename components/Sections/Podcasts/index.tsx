@@ -10,7 +10,7 @@ interface Props {
   homePage?: boolean;
 }
 
-export default function SectionBooks({ homePage }: Props) {
+export default function SectionPodcasts({ homePage }: Props) {
   return (
     <div className={'bg-white lg:pt-12 pb-px128 pt-8'}>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>

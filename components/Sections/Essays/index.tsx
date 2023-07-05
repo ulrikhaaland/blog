@@ -7,13 +7,13 @@ import { useRouter } from 'next/router';
 const essays = essayList;
 
 interface Props {
-  homePage: boolean;
+  homePage?: boolean;
 }
 
 export default function SectionEssays({ homePage }: Props) {
   return (
     <div
-      className={'bg-white'}
+      className={'bg-white '}
       style={{
         paddingTop: homePage ? 64 : 128,
         paddingBottom: 128,
@@ -22,22 +22,22 @@ export default function SectionEssays({ homePage }: Props) {
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
           <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-            {homePage ? 'Fra bloggen' : 'Bøker'}
+            {homePage ? 'Fra bloggen' : 'Essays'}
           </h2>
-          <p className='mt-3 text-xl text-gray-500 sm:mt-4'>
+          {/* <p className='mt-3 text-xl text-gray-500 sm:mt-4'>
             Det beste du kan gjøre for deg selv er å lære deg å lese på Engelsk.
             Slik gjør du det: Kjøp boken digitalt på Amazon. Når du ikke forstår
             noe, stopp, slå det opp, forstå, og fortsett.
-          </p>
+          </p> */}
         </div>
 
         <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
-          {essays.map((essay) => (
+          {shuffle(essays).map((essay) => (
             <article
               key={essay.title}
               className='flex max-w-xl flex-col items-start justify-between'
             >
-              <div className='relative w-full h-72 rounded-lg overflow-hidden flex justify-center items-center'>
+              <div className='relative w-full h-64 rounded-lg overflow-hidden flex justify-center items-center'>
                 <a
                   href={essay.href}
                   target='_blank'
@@ -49,7 +49,7 @@ export default function SectionEssays({ homePage }: Props) {
                   <Image
                     src={essay.image}
                     alt={essay.title}
-                    className='w-44 h-72 object-cover object-center transition duration-500 ease-in-out transform hover:scale-110'
+                    className='w-full h-full object-cover object-center transition duration-500 ease-in-out transform hover:scale-110'
                   />
                 </a>
               </div>
@@ -102,4 +102,24 @@ export default function SectionEssays({ homePage }: Props) {
       </div>
     </div>
   );
+}
+
+function shuffle(array: any[]) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
 }

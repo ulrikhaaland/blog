@@ -1,3 +1,4 @@
+// BOOKS
 import { StaticImageData } from 'next/image';
 import imageBoi from '../assets/books/boi.jpg';
 import influenceImage from '../assets/books/influence.jpg';
@@ -19,7 +20,7 @@ import sixImage from '../assets/books/six.jpg';
 import philImage from '../assets/books/thestoryofphilosophy.jpg';
 import whyImage from '../assets/books/why.jpg';
 import wisdomImage from '../assets/books/wisdom.jpg';
-
+// ESSAYS
 import aiImage from '../assets/essays/ai.png';
 import alexanderImage from '../assets/essays/ai.png';
 import burnoutImage from '../assets/essays/burnout.png';
@@ -44,6 +45,19 @@ import tyrantImage from '../assets/essays/tyrant.png';
 import workImage from '../assets/essays/work.png';
 import writerImage from '../assets/essays/writer.png';
 import readImage from '../assets/essays/read.png';
+// PODCASTS
+import aarthiImage from '../assets/podcasts/aarthi.jpg';
+import allImage from '../assets/podcasts/all.jpg';
+import driveImage from '../assets/podcasts/drive.jpg';
+import hamiltonImage from '../assets/podcasts/hamilton.jpg';
+import lexImage from '../assets/podcasts/lex.jpg';
+import mlstImage from '../assets/podcasts/mlst.jpg';
+import moneyImage from '../assets/podcasts/money.jpg';
+import networkImage from '../assets/podcasts/network.jpg';
+import portalImage from '../assets/podcasts/portal.jpg';
+import priosImage from '../assets/podcasts/prios.jpg';
+import tylerImage from '../assets/podcasts/tyler.jpg';
+import wakingImage from '../assets/podcasts/waking.jpg';
 
 export interface Books {
   title: string;
@@ -61,6 +75,15 @@ export interface Essay {
   image: StaticImageData | string;
   description: string;
   date: string;
+  category: string;
+  author: string;
+}
+
+export interface Podcast {
+  title: string;
+  href: string;
+  image: StaticImageData | string;
+  description: string;
   category: string;
   author: string;
 }
@@ -285,7 +308,7 @@ export const essayList: Essay[] = [
   {
     title: "What's expected of us",
     href: 'https://www.nature.com/articles/436150a',
-    image: historyImage,
+    image: expectedImage,
     description:
       'A thought-provoking essay that explores free will and determinism through an experiment that reveals our inability to predict our own choices.',
     date: '2005-07-06',
@@ -395,7 +418,7 @@ export const essayList: Essay[] = [
     author: 'Michael Ashcroft',
   },
   {
-    title: "I Woudldn't Start From Here — Recovering From Burnout",
+    title: "I Wouldn't Start From Here — Recovering From Burnout",
     href: 'https://www.michaelashcroft.org/notebook/i-wouldnt-start-from-here-recovering-from-burnout',
     image: burnoutImage,
     description:
@@ -521,5 +544,116 @@ export const essayList: Essay[] = [
     date: '2023-06-06',
     category: 'Technology',
     author: 'Marc Andreessen',
+  },
+];
+
+export const podcastList: Podcast[] = [
+  {
+    title: 'The Drive',
+    href: 'https://www.youtube.com/@PeterAttiaMD/featured',
+    image: driveImage,
+    description:
+      'The Peter Attia Drive is a weekly, ultra-deep-dive podcast focusing on maximizing health, longevity, critical thinking…and a few other things.',
+    category: 'Health',
+    author: 'Peter Attia',
+  },
+  {
+    title: 'The Portal',
+    href: 'https://www.youtube.com/@EricWeinsteinPhD',
+    image: portalImage,
+    description:
+      'The Portal is an exploration into discovery, including conversations with thought leaders. Host Eric Weinstein, Managing Director of Thiel Capital, brings his unique expertise and diverse roster of guests for a wide range of discussions, including science, culture, business, and capitalism.',
+    category: 'Philosophy',
+    author: 'Eric Weinstein',
+  },
+  {
+    title: 'Lex Fridman',
+    href: 'https://www.youtube.com/@lexfridman',
+    image: lexImage,
+    description:
+      'Conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power. Formerly called Artificial Intelligence (AI Podcast).',
+    category: 'Technology',
+    author: 'Lex Fridman',
+  },
+  {
+    title: 'Machine Learning Street Talk',
+    href: 'https://www.youtube.com/@MachineLearningStreetTalk',
+    image: mlstImage,
+    description:
+      'MLST is the top AI podcast on Spotify. Subscribe now! Welcome! The team at MLST is inspired by academic research and each week we engage in dynamic discussion with pre-eminent figures in the AI field.',
+    category: 'AI',
+    author: 'Tim Scarfe',
+  },
+  {
+    title: 'No Priors',
+    href: 'https://www.youtube.com/@NoPriorsPodcast/featured',
+    image: priosImage,
+    description:
+      "At this moment of inflection in technology, co-hosts Elad Gil and Sarah Guo talk to the world's leading AI engineers, researchers and founders about the biggest questions: How far away is AGI? What markets are at risk for disruption? How will commerce, culture, and society change? What’s happening in state-of-the-art in research? 'No Priors' is your guide to the AI revolution. ",
+    category: 'AI',
+    author: 'Elad Gil',
+  },
+  {
+    title: 'Aarthi and Sriram',
+    href: 'https://www.youtube.com/@AarthiAndSriram',
+    image: aarthiImage,
+    description:
+      'Aarthi Ramamurthy and Sriram Krishnan host conversations with leading builders, CEOs and reveal what it takes to make it to the inside.',
+    category: 'Technology',
+    author: 'Aarthi and Sriram',
+  },
+  {
+    title: 'Conversations with Tyler',
+    href: 'https://www.youtube.com/@MercatusCenter',
+    image: tylerImage,
+    description:
+      'Conversations with Tyler is a podcast hosted by Tyler Cowen, economist and professor at George Mason University. The show features one-on-one discussions with today’s top thinkers across a wide range of fields. Past guests include Steven Pinker, Nate Silver, Don Boudreaux, Jill Lepore, Ben Sasse, and Margaret Atwood. From economics to culture to politics to investing, the podcast explores a wide array of topics from many points of view. In addition to the podcast, Cowen is also the author of several books including The Complacent Class, Average is Over, and The Great Stagnation. ',
+    category: 'Philosophy',
+    author: 'Tyler Cowen',
+  },
+  {
+    title: 'What is Money?',
+    href: 'https://www.youtube.com/@RobertBreedlove22',
+    image: moneyImage,
+    description:
+      'What is Money? is a podcast hosted by Robert Breedlove, CEO of Parallax Digital, and is dedicated to exploring the questions surrounding money, economics, and bitcoin. The podcast is hosted on the Bitcoin Magazine Podcast Network and is produced by the Let’s Talk Bitcoin Network. ',
+    category: 'Bitcoin',
+    author: 'Robert Breedlove',
+  },
+  {
+    title: 'The Network State',
+    href: 'https://www.youtube.com/@thenetworkstate',
+    image: networkImage,
+    description:
+      "What comes after Google, Facebook, Bitcoin, and Ethereum? Perhaps it's the startup country — the network state. Balaji interviews tech founders and policymakers from around the world on managing billions of dollars and millions of people, as well as what it might take to start a new kind of state.",
+    category: 'Technology',
+    author: 'Balaji Srinivasan',
+  },
+  {
+    title: 'Waking Up',
+    href: 'https://www.youtube.com/@samharrisorg',
+    image: wakingImage,
+    description:
+      'Join neuroscientist, philosopher, and best-selling author Sam Harris as he explores important and controversial questions about the human mind, society, and current events.',
+    category: 'Philosophy',
+    author: 'Sam Harris',
+  },
+  {
+    title: 'Hamilton Morris',
+    href: 'https://www.youtube.com/@HamiltonMorris/featured',
+    image: hamiltonImage,
+    description:
+      "Hamilton Morris is a writer, documentarian, psychonaut and scientific researcher. He is known for his television series Hamilton's Pharmacopeia, which is broadcast on Viceland. He is the author of the book American Drug Chronicles, published by Vice Magazine in 2011. He is the son of Julia Sheehan and the late author Errol Morris.",
+    category: 'Kjemi',
+    author: 'Hamilton Morris',
+  },
+  {
+    title: 'The All In Podcast',
+    href: 'https://www.youtube.com/@allin',
+    image: allImage,
+    description:
+      'The All-In Podcast Show is hosted by four Silicon Valley icons: Chamath Palihapitiya, Jason Calacanis, David Sacks, and David Friedberg. They interview the world’s greatest entrepreneurs, investors, and celebrities. They discuss the tough questions facing our world today, and the impact of technology on our future.',
+    category: 'Technology',
+    author: 'Chamath Palihapitiya',
   },
 ];
