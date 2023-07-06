@@ -1,39 +1,63 @@
-import { bookList } from '../../../data/knowledge';
-import image from '../../../assets/posts/future.png';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { podcastList } from '../../../data/knowledge';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
-const books = bookList;
+const pods = podcastList;
 
-interface Props {
-  homePage?: boolean;
+enum PodType {
+  CHANNEL = 'CHANNEL',
+  EPISODE = 'EPISODE',
 }
 
-export default function SectionPodcasts({ homePage }: Props) {
+export default function SectionPodcasts({}) {
+  const [podcastType, setPodcastType] = useState(PodType.CHANNEL);
+
   return (
     <div className={'bg-white lg:pt-12 pb-px128 pt-8'}>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
           <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-            {homePage ? 'Fra bloggen' : 'Bøker'}
+            {'Podcasts'}
           </h2>
-          <p className='mt-3 text-xl text-gray-500 sm:mt-4'>
-            Det beste du kan gjøre for deg selv er å lære deg å lese på Engelsk.
-            Slik gjør du det: Kjøp boken digitalt på Amazon. Når du ikke forstår
-            noe, stopp, slå det opp, forstå, og fortsett.
-          </p>
+          {podcastType === PodType.EPISODE && (
+            <p className='mt-3 text-xl text-gray-500 sm:mt-4'>
+              Episodene som er så bra at jeg kan høre på nytt
+            </p>
+          )}
+
+          <div className='mt-4'>
+            <button
+              onClick={() => setPodcastType(PodType.CHANNEL)}
+              className={`px-3 py-1 mr-2 rounded-full ${
+                podcastType === PodType.CHANNEL
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-200 text-gray-500'
+              }`}
+            >
+              Kanaler
+            </button>
+            <button
+              onClick={() => setPodcastType(PodType.EPISODE)}
+              className={`px-3 py-1 rounded-full ${
+                podcastType === PodType.EPISODE
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-200 text-gray-500'
+              }`}
+            >
+              Episoder
+            </button>
+          </div>
         </div>
 
         <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
-          {books.map((book) => (
+          {pods.map((pod) => (
             <article
-              key={book.title}
+              key={pod.title}
               className='flex max-w-xl flex-col items-start justify-between'
             >
               <div className='relative w-full h-72 rounded-lg overflow-hidden flex justify-center items-center'>
                 <a
-                  href={book.href}
+                  href={pod.href}
                   target='_blank'
                   rel='noopener noreferrer'
                   style={{
@@ -41,8 +65,8 @@ export default function SectionPodcasts({ homePage }: Props) {
                   }}
                 >
                   <Image
-                    src={book.image}
-                    alt={book.title}
+                    src={pod.image}
+                    alt={pod.title}
                     className='w-44 h-72 object-cover object-center transition duration-500 ease-in-out transform hover:scale-110'
                   />
                 </a>
@@ -54,23 +78,21 @@ export default function SectionPodcasts({ homePage }: Props) {
                 }}
                 className='flex items-center gap-x-4 text-xs'
               >
-                <time dateTime={book.date} className='text-gray-500'>
-                  {book.date}
-                </time>
+                <span className='text-gray-500'>{pod.author}</span>
                 <span
                   style={{
                     cursor: 'pointer',
                   }}
                   className='relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100'
                 >
-                  {book.category}
+                  {pod.category}
                 </span>
               </div>
 
               <div className='group relative'>
                 <h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
                   <a
-                    href={book.href}
+                    href={pod.href}
                     target='_blank'
                     rel='noopener noreferrer'
                     style={{
@@ -78,7 +100,7 @@ export default function SectionPodcasts({ homePage }: Props) {
                     }}
                   >
                     <span className='absolute inset-0' />
-                    {book.title}
+                    {pod.title}
                   </a>
                 </h3>
                 <p
@@ -87,7 +109,7 @@ export default function SectionPodcasts({ homePage }: Props) {
                   }}
                   className='mt-5 line-clamp-3 text-sm leading-6 text-gray-600'
                 >
-                  {book.description}
+                  {pod.description}
                 </p>
               </div>
             </article>

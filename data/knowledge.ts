@@ -22,7 +22,7 @@ import whyImage from '../assets/books/why.jpg';
 import wisdomImage from '../assets/books/wisdom.jpg';
 // ESSAYS
 import aiImage from '../assets/essays/ai.png';
-import alexanderImage from '../assets/essays/ai.png';
+import alexanderImage from '../assets/essays/alexander.png';
 import burnoutImage from '../assets/essays/burnout.png';
 import cancerImage from '../assets/essays/cancer.png';
 import codeImage from '../assets/essays/code.png';
@@ -84,6 +84,16 @@ export interface Podcast {
   href: string;
   image: StaticImageData | string;
   description: string;
+  category: string;
+  author: string;
+}
+
+export interface PodcastEpisode {
+  title: string;
+  href: string;
+  image: StaticImageData | string;
+  description: string;
+  date: string;
   category: string;
   author: string;
 }
@@ -657,3 +667,139 @@ export const podcastList: Podcast[] = [
     author: 'Chamath Palihapitiya',
   },
 ];
+
+
+export const PodcastEpisodeList: PodcastEpisode[] = [
+  {
+    title: "Joe Rogan Experience #1212 - David Goggins",
+    href: "https://www.youtube.com/live/BvWB7B8tXK8?feature=share",
+    image: "https://i.ytimg.com/vi/BvWB7B8tXK8/maxresdefault.jpg",
+    description: "David Goggins is a retired Navy SEAL and former USAF Tactical Air Control Party member who served in Iraq and Afghanistan. He is an ultramarathon runner, ultra-distance cyclist, triathlete and world record holder for the most pull-ups done in 24 hours.",
+    date: "2018-12-05",
+    category: "Fitness",
+    author: "Joe Rogan",
+  },
+  {
+    title: "Joe Rogan Experience #1136 - Hamilton Morris",
+    href: "https://www.youtube.com/live/HM8WDZIhs3M?feature=share",
+    image: "https://i.ytimg.com/vi/HM8WDZIhs3M/maxresdefault.jpg",
+    description: "Hamilton Morris is a writer, documentarian, psychonaut and scientific researcher. His show \"Hamilton's Pharmacopeia\" is available on VICELAND and iTunes.",
+    date: "2018-09-26",
+    category: "Kjemi",
+    author: "Joe Rogan",
+  },
+  {
+    title: "The Tim Ferris Show - Chuck Palahniuk, Author of Fight Club",
+    href: "https://tim.blog/2020/09/02/chuck-palahniuk/",
+    image: "https://i.ytimg.com/vi/0X1dP0ZlR7k/maxresdefault.jpg",
+    description: "A Masterclass in Creative Living and Dangerous Writing",
+    date: "2020-09-02",
+    category: "Writing",
+    author: "Tim Ferriss",
+  },
+  {
+    title: "Joe Rogan Experience #1309 - Naval Ravikant",
+    href: "https://youtu.be/3qHkcs3kG44",
+    image: "https://i.ytimg.com/vi/3qHkcs3kG44/maxresdefault.jpg",
+    description: "Naval Ravikant is an entrepreneur and angel investor, a co-author of Venture Hacks, and a co-maintainer of AngelList.",
+    date: "2019-06-05",
+    category: "Philosophy",
+    author: "Joe Rogan",
+  },
+  {
+    title: "The Tim Ferris Show - Neil Gaiman",
+    href: "https://youtu.be/iHPKTby9z6o",
+    image: "https://i.ytimg.com/vi/0X1dP0ZlR7k/maxresdefault.jpg",
+    description: '"The Interview I’ve Waited 20 Years To Do"',
+    date: "2019-03-28",
+    category: "Writing",
+    author: "Tim Ferriss",
+  },
+  {
+
+    title: "Naval Ravikant & Kapil Gupta: Conquering the Mind",
+    href: "https://youtu.be/sBtuqpNZwio",
+    image: "https://i.ytimg.com/vi/sBtuqpNZwio/maxresdefault.jpg",
+    description: '“I can always tell that people who ask for stock tips, aren’t really serious about investing. People who ask for book recommendations aren’t really serious about reading. People who ask ‘What, what business should I build?’ aren’t really serious about entrepreneurship."',
+    date: "2021-02-19",
+    category: "Philosophy",
+    author: "Naval Ravikant",
+  },
+  {
+    title: "David Deutsch on the infinite reach of knowledge",
+    href: "https://youtu.be/cEfG1PHNB64",
+    image: "https://i.ytimg.com/vi/cEfG1PHNB64/maxresdefault.jpg",
+    description: "It can be easy to believe that humans are insignificant. We’re specks of dust on a random planet in a vast universe. Less powerful than elephants. Fewer than ants. But David Deutsch believes that’s all beside the point, because humans possess one unique skill: attaining knowledge.",
+    date: "2021-06-30",
+    category: "Science",
+    author: "Ted",
+  },
+  {
+    title: "The Tim Ferris Show - Dr. Gabor Maté on Trauma, Addiction, Ayahuasca, and More",
+    href: "https://youtu.be/H9B5mYfBPlY",
+    image: "https://i.ytimg.com/vi/H9B5mYfBPlY/maxresdefault.jpg",
+    description: "Tim Ferriss speaks with Dr. Gabor Maté, a physician who specializes in neurology, psychiatry, and psychology. He’s well known for studying and treating addiction.",
+    date: "2018-03-07",
+    category: "Psychology",
+    author: "Tim Ferriss",
+  },
+  {
+    title: "Jordan Peterson - Life at the Bottom | Theodore Dalrymple",
+    href: "https://youtu.be/_ET7banSeN0",
+    image: "https://i.ytimg.com/vi/_ET7banSeN0/maxresdefault.jpg",
+    description: "Theodore Dalrymple is an English writer and retired prison doctor and psychiatrist. He worked in a number of Sub-Saharan African countries as well as in the east end of London. He is also a contributing editor to City Journal and frequent contributor to the Manhattan Institute's publication.",
+    date: "2021-05-20",
+    category: "Psychology",
+    author: "Jordan Peterson",  
+  },
+  {
+    title: "Huberman Lab Podcast - Dr. Karl Deisseroth: Understanding & Healing the Mind ",
+    href: "https://youtu.be/w9MXqXBZy9U",
+    image: "https://i.ytimg.com/vi/w9MXqXBZy9U/maxresdefault.jpg",
+    description: "Dr. Karl Deisseroth is a psychiatrist and neuroscientist at Stanford University. He is known for his groundbreaking work in developing optogenetics, a method of using light to control neurons in the brain.",
+    date: "2021-06-28",
+    category: "Psychology",
+    author: "Andrew Huberman",
+  },
+  {
+    title: "Jordan Peterson - Evolution and the Challenges of Modern Life | Bret Weinstein and Heather Heying",
+    href: "https://youtu.be/jKh0ni7HlNw",
+    image: "https://i.ytimg.com/vi/jKh0ni7HlNw/maxresdefault.jpg",
+    description: "Bret Weinstein and Heather Heying are former professors of Evolutionary Biology at Evergreen State College. Together, they host the DarkHorse Podcast.",
+    date: "2021-10-05",
+    category: "Biology",
+    author: "Jordan Peterson",
+  },
+  {
+
+    title: "Jordan Peterson - Questioning Sam Harris",
+    href: "https://youtu.be/prt9D90BvFI",
+    image: "https://i.ytimg.com/vi/prt9D90BvFI/maxresdefault.jpg",
+    description: 'Sam Harris is a neuroscientist, philosopher, New York Times best-selling author, host of the Making Sense podcast, and creator of the "Waking up" app. Dr. Harris and I discuss the is/ought problem, dreams, attention, evidence, consciousness, logic, psychedelics, religion, Waking Up, and much more.'
+    ,
+    date: "2021-11-25",
+    category: "Philosophy",
+    author: "Jordan Peterson",
+  },
+  {
+    title: "Lex Fridman - Karl Deisseroth: Depression, Schizophrenia, and Psychiatry" ,
+    href: "https://youtu.be/OaeYUm06in0",
+    image: "https://i.ytimg.com/vi/OaeYUm06in0/maxresdefault.jpg",
+    description: "Karl Deisseroth is a professor of bioengineering, psychiatry, and behavioral sciences at Stanford University.",
+    date: "2022-04-07",
+    category: "Psychology",
+    author: "Lex Fridman",
+  },
+  {
+    title: "Lex Fridman - Demis Hassabis: DeepMind - AI, Superintelligence & the Future of Humanity",
+    href: "https://youtu.be/Gfr50f6ZBvo",
+    image: "https://i.ytimg.com/vi/Gfr50f6ZBvo/maxresdefault.jpg",
+    description: "Demis Hassabis is the co-founder and CEO of DeepMind, responsible for the company’s overall strategy and mission to solve intelligence, and one of the world’s leading experts in artificial intelligence.",
+    date: "2022-07-01",
+    category: "AI",
+    author: "Lex Fridman",
+  },
+  {
+    title: "Lex Fridman - Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI",
+    
+

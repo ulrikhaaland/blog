@@ -3,6 +3,7 @@ import image from '../../../assets/posts/future.png';
 import { useNavigate } from 'react-router-dom';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 const books = bookList;
 
@@ -11,6 +12,12 @@ interface Props {
 }
 
 export default function SectionBooks({ homePage }: Props) {
+  const [shownBooks, setShownBooks] = useState(books.slice(0, 3));
+
+  const showMore = () => {
+    setShownBooks(books); // Show all books
+  };
+
   return (
     <div className={'bg-white lg:pt-12 pb-px128 pt-8'}>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
@@ -26,7 +33,7 @@ export default function SectionBooks({ homePage }: Props) {
         </div>
 
         <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
-          {books.map((book) => (
+          {shownBooks.map((book) => (
             <article
               key={book.title}
               className='flex max-w-xl flex-col items-start justify-between'
@@ -93,6 +100,23 @@ export default function SectionBooks({ homePage }: Props) {
             </article>
           ))}
         </div>
+        {shownBooks.length < books.length && (
+          <button
+            onClick={showMore}
+            style={{
+              background: 'linear-gradient(90deg, #afd4c5, #6db2a8)',
+              color: 'white',
+              fontWeight: 'bold',
+              padding: '10px 20px',
+              borderRadius: '30px',
+              border: 'none',
+              cursor: 'pointer',
+              marginTop: '16px',
+            }}
+          >
+            Vis mer
+          </button>
+        )}
       </div>
     </div>
   );
