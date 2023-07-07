@@ -1,5 +1,5 @@
-// BOOKS
 import { StaticImageData } from 'next/image';
+// BOOKS
 import imageBoi from '../assets/books/boi.jpg';
 import influenceImage from '../assets/books/influence.jpg';
 import outliveImage from '../assets/books/outlive.jpg';
@@ -19,7 +19,7 @@ import selfishImage from '../assets/books/selfish.jpg';
 import sixImage from '../assets/books/six.jpg';
 import philImage from '../assets/books/thestoryofphilosophy.jpg';
 import whyImage from '../assets/books/why.jpg';
-import wisdomImage from '../assets/books/wisdom.jpg';
+import dwarkeshImage from '../assets/books/wisdom.jpg';
 // ESSAYS
 import aiImage from '../assets/essays/ai.png';
 import alexanderImage from '../assets/essays/alexander.png';
@@ -58,6 +58,33 @@ import portalImage from '../assets/podcasts/portal.jpg';
 import priosImage from '../assets/podcasts/prios.jpg';
 import tylerImage from '../assets/podcasts/tyler.jpg';
 import wakingImage from '../assets/podcasts/waking.jpg';
+import wisdomImage from '../assets/podcasts/dwarkesh.jpg';
+// PODCAST EPISODES
+import bottomImageEP from '../assets/podcastepisodes/bottom.jpg';
+import breneImageEP from '../assets/podcastepisodes/brene.jpg';
+import brettImageEP from '../assets/podcastepisodes/brett.jpg';
+import chuckImageEP from '../assets/podcastepisodes/chuck.jpg';
+import demisImageEP from '../assets/podcastepisodes/demis.jpg';
+import dwarkeshImageEP from '../assets/podcastepisodes/dwarkesh.jpg';
+import emilImageEP from '../assets/podcastepisodes/emil.jpg';
+import gaborImageEP from '../assets/podcastepisodes/gabor.jpg';
+import gaimanImageEP from '../assets/podcastepisodes/gaiman.jpg';
+import gogginsImageEP from '../assets/podcastepisodes/goggins.jpg';
+import hamiltonImageEP from '../assets/podcastepisodes/hamilton.jpg';
+import kapilImageEP from '../assets/podcastepisodes/kapil.jpg';
+import karlImageEP from '../assets/podcastepisodes/karl.jpg';
+import karllexImageEP from '../assets/podcastepisodes/karllex.jpg';
+import karpathyImageEP from '../assets/podcastepisodes/karpathy.jpg';
+import navalImageEP from '../assets/podcastepisodes/naval.jpg';
+import paradoxImageEP from '../assets/podcastepisodes/paradox.jpg';
+import peterImageEP from '../assets/podcastepisodes/peter.jpg';
+import rhodesImageEP from '../assets/podcastepisodes/rhodes.jpg';
+import richImageEP from '../assets/podcastepisodes/rich.jpg';
+import samharrisImageEP from '../assets/podcastepisodes/samharris.jpg';
+import talebImageEP from '../assets/podcastepisodes/taleb.jpg';
+import tedImageEP from '../assets/podcastepisodes/ted.jpg';
+import timferrisnavalImageEP from '../assets/podcastepisodes/timferrisnaval.jpg';
+import chuckRoganImageEP from '../assets/podcastepisodes/chuckRogan.jpg';
 
 export interface Books {
   title: string;
@@ -666,140 +693,264 @@ export const podcastList: Podcast[] = [
     category: 'Technology',
     author: 'Chamath Palihapitiya',
   },
+  {
+    title: 'Dwarkesh Patel',
+    href: 'https://www.youtube.com/@DwarkeshPatel',
+    image: dwarkeshImage,
+    description:
+      'I interview scientists, historians, economists, founders, & intellectuals. I ask really good questions. ',
+    category: 'Technology',
+    author: 'Dwarkesh Patel',
+  },
 ];
-
 
 export const PodcastEpisodeList: PodcastEpisode[] = [
   {
-    title: "Joe Rogan Experience #1212 - David Goggins",
-    href: "https://www.youtube.com/live/BvWB7B8tXK8?feature=share",
-    image: "https://i.ytimg.com/vi/BvWB7B8tXK8/maxresdefault.jpg",
-    description: "David Goggins is a retired Navy SEAL and former USAF Tactical Air Control Party member who served in Iraq and Afghanistan. He is an ultramarathon runner, ultra-distance cyclist, triathlete and world record holder for the most pull-ups done in 24 hours.",
-    date: "2018-12-05",
-    category: "Fitness",
-    author: "Joe Rogan",
+    title: 'The Joe Rogan Experience #1212 - David Goggins',
+    href: 'https://www.youtube.com/live/BvWB7B8tXK8?feature=share',
+    image: gogginsImageEP,
+    description:
+      'David Goggins is a retired Navy SEAL and former USAF Tactical Air Control Party member who served in Iraq and Afghanistan. He is an ultramarathon runner, ultra-distance cyclist, triathlete and world record holder for the most pull-ups done in 24 hours.',
+    date: '2018-12-05',
+    category: 'Fitness',
+    author: 'Joe Rogan',
   },
   {
-    title: "Joe Rogan Experience #1136 - Hamilton Morris",
-    href: "https://www.youtube.com/live/HM8WDZIhs3M?feature=share",
-    image: "https://i.ytimg.com/vi/HM8WDZIhs3M/maxresdefault.jpg",
-    description: "Hamilton Morris is a writer, documentarian, psychonaut and scientific researcher. His show \"Hamilton's Pharmacopeia\" is available on VICELAND and iTunes.",
-    date: "2018-09-26",
-    category: "Kjemi",
-    author: "Joe Rogan",
+    title: 'The Joe Rogan Experience #1136 - Hamilton Morris',
+    href: 'https://www.youtube.com/live/HM8WDZIhs3M?feature=share',
+    image: hamiltonImageEP,
+    description:
+      'Hamilton Morris is a writer, documentarian, psychonaut and scientific researcher. His show "Hamilton\'s Pharmacopeia" is available on VICELAND and iTunes.',
+    date: '2018-09-26',
+    category: 'Kjemi',
+    author: 'Joe Rogan',
   },
   {
-    title: "The Tim Ferris Show - Chuck Palahniuk, Author of Fight Club",
-    href: "https://tim.blog/2020/09/02/chuck-palahniuk/",
-    image: "https://i.ytimg.com/vi/0X1dP0ZlR7k/maxresdefault.jpg",
-    description: "A Masterclass in Creative Living and Dangerous Writing",
-    date: "2020-09-02",
-    category: "Writing",
-    author: "Tim Ferriss",
+    title: 'The Tim Ferris Show - Chuck Palahniuk, Author of Fight Club',
+    href: 'https://tim.blog/2020/09/02/chuck-palahniuk/',
+    image: chuckImageEP,
+    description: 'A Masterclass in Creative Living and Dangerous Writing',
+    date: '2020-09-02',
+    category: 'Writing',
+    author: 'Tim Ferriss',
   },
   {
-    title: "Joe Rogan Experience #1309 - Naval Ravikant",
-    href: "https://youtu.be/3qHkcs3kG44",
-    image: "https://i.ytimg.com/vi/3qHkcs3kG44/maxresdefault.jpg",
-    description: "Naval Ravikant is an entrepreneur and angel investor, a co-author of Venture Hacks, and a co-maintainer of AngelList.",
-    date: "2019-06-05",
-    category: "Philosophy",
-    author: "Joe Rogan",
+    title: 'The Joe Rogan Experience #1309 - Naval Ravikant',
+    href: 'https://youtu.be/3qHkcs3kG44',
+    image: navalImageEP,
+    description:
+      'Naval Ravikant is an entrepreneur and angel investor, a co-author of Venture Hacks, and a co-maintainer of AngelList.',
+    date: '2019-06-05',
+    category: 'Philosophy',
+    author: 'Joe Rogan',
   },
   {
-    title: "The Tim Ferris Show - Neil Gaiman",
-    href: "https://youtu.be/iHPKTby9z6o",
-    image: "https://i.ytimg.com/vi/0X1dP0ZlR7k/maxresdefault.jpg",
+    title: 'The Tim Ferris Show - Neil Gaiman',
+    href: 'https://youtu.be/iHPKTby9z6o',
+    image: gaimanImageEP,
     description: '"The Interview I’ve Waited 20 Years To Do"',
-    date: "2019-03-28",
-    category: "Writing",
-    author: "Tim Ferriss",
+    date: '2019-03-28',
+    category: 'Writing',
+    author: 'Tim Ferriss',
   },
   {
-
-    title: "Naval Ravikant & Kapil Gupta: Conquering the Mind",
-    href: "https://youtu.be/sBtuqpNZwio",
-    image: "https://i.ytimg.com/vi/sBtuqpNZwio/maxresdefault.jpg",
-    description: '“I can always tell that people who ask for stock tips, aren’t really serious about investing. People who ask for book recommendations aren’t really serious about reading. People who ask ‘What, what business should I build?’ aren’t really serious about entrepreneurship."',
-    date: "2021-02-19",
-    category: "Philosophy",
-    author: "Naval Ravikant",
+    title: 'Naval Ravikant & Kapil Gupta: Conquering the Mind',
+    href: 'https://youtu.be/sBtuqpNZwio',
+    image: kapilImageEP,
+    description:
+      '“I can always tell that people who ask for stock tips, aren’t really serious about investing. People who ask for book recommendations aren’t really serious about reading. People who ask ‘What, what business should I build?’ aren’t really serious about entrepreneurship."',
+    date: '2021-02-19',
+    category: 'Philosophy',
+    author: 'Naval Ravikant',
   },
   {
-    title: "David Deutsch on the infinite reach of knowledge",
-    href: "https://youtu.be/cEfG1PHNB64",
-    image: "https://i.ytimg.com/vi/cEfG1PHNB64/maxresdefault.jpg",
-    description: "It can be easy to believe that humans are insignificant. We’re specks of dust on a random planet in a vast universe. Less powerful than elephants. Fewer than ants. But David Deutsch believes that’s all beside the point, because humans possess one unique skill: attaining knowledge.",
-    date: "2021-06-30",
-    category: "Science",
-    author: "Ted",
+    title: 'David Deutsch on the infinite reach of knowledge',
+    href: 'https://youtu.be/cEfG1PHNB64',
+    image: tedImageEP,
+    description:
+      'It can be easy to believe that humans are insignificant. We’re specks of dust on a random planet in a vast universe. Less powerful than elephants. Fewer than ants. But David Deutsch believes that’s all beside the point, because humans possess one unique skill: attaining knowledge.',
+    date: '2021-06-30',
+    category: 'Science',
+    author: 'Ted',
   },
   {
-    title: "The Tim Ferris Show - Dr. Gabor Maté on Trauma, Addiction, Ayahuasca, and More",
-    href: "https://youtu.be/H9B5mYfBPlY",
-    image: "https://i.ytimg.com/vi/H9B5mYfBPlY/maxresdefault.jpg",
-    description: "Tim Ferriss speaks with Dr. Gabor Maté, a physician who specializes in neurology, psychiatry, and psychology. He’s well known for studying and treating addiction.",
-    date: "2018-03-07",
-    category: "Psychology",
-    author: "Tim Ferriss",
+    title:
+      'The Tim Ferris Show - Dr. Gabor Maté on Trauma, Addiction, Ayahuasca, and More',
+    href: 'https://youtu.be/H9B5mYfBPlY',
+    image: gaborImageEP,
+    description:
+      'Tim Ferriss speaks with Dr. Gabor Maté, a physician who specializes in neurology, psychiatry, and psychology. He’s well known for studying and treating addiction.',
+    date: '2018-03-07',
+    category: 'Psychology',
+    author: 'Tim Ferriss',
   },
   {
-    title: "Jordan Peterson - Life at the Bottom | Theodore Dalrymple",
-    href: "https://youtu.be/_ET7banSeN0",
-    image: "https://i.ytimg.com/vi/_ET7banSeN0/maxresdefault.jpg",
-    description: "Theodore Dalrymple is an English writer and retired prison doctor and psychiatrist. He worked in a number of Sub-Saharan African countries as well as in the east end of London. He is also a contributing editor to City Journal and frequent contributor to the Manhattan Institute's publication.",
-    date: "2021-05-20",
-    category: "Psychology",
-    author: "Jordan Peterson",  
+    title: 'Jordan Peterson - Life at the Bottom | Theodore Dalrymple',
+    href: 'https://youtu.be/_ET7banSeN0',
+    image: bottomImageEP,
+    description:
+      "Theodore Dalrymple is an English writer and retired prison doctor and psychiatrist. He worked in a number of Sub-Saharan African countries as well as in the east end of London. He is also a contributing editor to City Journal and frequent contributor to the Manhattan Institute's publication.",
+    date: '2021-05-20',
+    category: 'Psychology',
+    author: 'Jordan Peterson',
   },
   {
-    title: "Huberman Lab Podcast - Dr. Karl Deisseroth: Understanding & Healing the Mind ",
-    href: "https://youtu.be/w9MXqXBZy9U",
-    image: "https://i.ytimg.com/vi/w9MXqXBZy9U/maxresdefault.jpg",
-    description: "Dr. Karl Deisseroth is a psychiatrist and neuroscientist at Stanford University. He is known for his groundbreaking work in developing optogenetics, a method of using light to control neurons in the brain.",
-    date: "2021-06-28",
-    category: "Psychology",
-    author: "Andrew Huberman",
+    title:
+      'Huberman Lab Podcast - Dr. Karl Deisseroth: Understanding & Healing the Mind ',
+    href: 'https://youtu.be/w9MXqXBZy9U',
+    image: karlImageEP,
+    description:
+      'Dr. Karl Deisseroth is a psychiatrist and neuroscientist at Stanford University. He is known for his groundbreaking work in developing optogenetics, a method of using light to control neurons in the brain.',
+    date: '2021-06-28',
+    category: 'Psychology',
+    author: 'Andrew Huberman',
   },
   {
-    title: "Jordan Peterson - Evolution and the Challenges of Modern Life | Bret Weinstein and Heather Heying",
-    href: "https://youtu.be/jKh0ni7HlNw",
-    image: "https://i.ytimg.com/vi/jKh0ni7HlNw/maxresdefault.jpg",
-    description: "Bret Weinstein and Heather Heying are former professors of Evolutionary Biology at Evergreen State College. Together, they host the DarkHorse Podcast.",
-    date: "2021-10-05",
-    category: "Biology",
-    author: "Jordan Peterson",
+    title:
+      'Jordan Peterson - Evolution and the Challenges of Modern Life | Bret Weinstein and Heather Heying',
+    href: 'https://youtu.be/jKh0ni7HlNw',
+    image: brettImageEP,
+    description:
+      'Bret Weinstein and Heather Heying are former professors of Evolutionary Biology at Evergreen State College. Together, they host the DarkHorse Podcast.',
+    date: '2021-10-05',
+    category: 'Biology',
+    author: 'Jordan Peterson',
   },
   {
-
-    title: "Jordan Peterson - Questioning Sam Harris",
-    href: "https://youtu.be/prt9D90BvFI",
-    image: "https://i.ytimg.com/vi/prt9D90BvFI/maxresdefault.jpg",
-    description: 'Sam Harris is a neuroscientist, philosopher, New York Times best-selling author, host of the Making Sense podcast, and creator of the "Waking up" app. Dr. Harris and I discuss the is/ought problem, dreams, attention, evidence, consciousness, logic, psychedelics, religion, Waking Up, and much more.'
-    ,
-    date: "2021-11-25",
-    category: "Philosophy",
-    author: "Jordan Peterson",
+    title: 'Jordan Peterson - Questioning Sam Harris',
+    href: 'https://youtu.be/prt9D90BvFI',
+    image: samharrisImageEP,
+    description:
+      'Sam Harris is a neuroscientist, philosopher, New York Times best-selling author, host of the Making Sense podcast, and creator of the "Waking up" app. Dr. Harris and I discuss the is/ought problem, dreams, attention, evidence, consciousness, logic, psychedelics, religion, Waking Up, and much more.',
+    date: '2021-11-25',
+    category: 'Philosophy',
+    author: 'Jordan Peterson',
   },
   {
-    title: "Lex Fridman - Karl Deisseroth: Depression, Schizophrenia, and Psychiatry" ,
-    href: "https://youtu.be/OaeYUm06in0",
-    image: "https://i.ytimg.com/vi/OaeYUm06in0/maxresdefault.jpg",
-    description: "Karl Deisseroth is a professor of bioengineering, psychiatry, and behavioral sciences at Stanford University.",
-    date: "2022-04-07",
-    category: "Psychology",
-    author: "Lex Fridman",
+    title:
+      'Lex Fridman - Karl Deisseroth: Depression, Schizophrenia, and Psychiatry',
+    href: 'https://youtu.be/OaeYUm06in0',
+    image: karllexImageEP,
+    description:
+      'Karl Deisseroth is a professor of bioengineering, psychiatry, and behavioral sciences at Stanford University.',
+    date: '2022-04-07',
+    category: 'Psychology',
+    author: 'Lex Fridman',
   },
   {
-    title: "Lex Fridman - Demis Hassabis: DeepMind - AI, Superintelligence & the Future of Humanity",
-    href: "https://youtu.be/Gfr50f6ZBvo",
-    image: "https://i.ytimg.com/vi/Gfr50f6ZBvo/maxresdefault.jpg",
-    description: "Demis Hassabis is the co-founder and CEO of DeepMind, responsible for the company’s overall strategy and mission to solve intelligence, and one of the world’s leading experts in artificial intelligence.",
-    date: "2022-07-01",
-    category: "AI",
-    author: "Lex Fridman",
+    title:
+      'Lex Fridman - Demis Hassabis: DeepMind - AI, Superintelligence & the Future of Humanity',
+    href: 'https://youtu.be/Gfr50f6ZBvo',
+    image: demisImageEP,
+    description:
+      'Demis Hassabis is the co-founder and CEO of DeepMind, responsible for the company’s overall strategy and mission to solve intelligence, and one of the world’s leading experts in artificial intelligence.',
+    date: '2022-07-01',
+    category: 'AI',
+    author: 'Lex Fridman',
   },
   {
-    title: "Lex Fridman - Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI",
-    
-
+    title:
+      'Lex Fridman - Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI',
+    href: 'https://youtu.be/cdiD-9MMpb0',
+    image: karpathyImageEP,
+    description:
+      "Andrej Karpathy is a legendary AI researcher, engineer, and educator. He's the former director of AI at Tesla, a founding member of OpenAI, and an educator at Stanford.",
+    date: '2022-10-29',
+    category: 'AI',
+    author: 'Lex Fridman',
+  },
+  {
+    title: 'Nassim Taleb and Daniel Kahneman',
+    href: 'https://youtu.be/MMBclvY_EMA',
+    image: talebImageEP,
+    description: 'Discussing Antifragility',
+    date: '2013-02-05',
+    category: 'Philosophy',
+    author: 'Nassim Taleb',
+  },
+  {
+    title:
+      'Aarthi & Sriram - The Rise of a Dealmaker: The Emil Michael Story at Uber.',
+    href: 'https://youtu.be/QmjzymdAXMA',
+    image: emilImageEP,
+    description:
+      'a masterclass in negotiation, art of making deals, when to walk away from them, his story, working with Travis Kalanick at Uber, and so much more.',
+    date: '2023-03-04',
+    category: 'Business',
+    author: 'Aarthi & Sriram',
+  },
+  {
+    title:
+      'Dwarkesh Patel - Richard Rhodes - Making of Atomic Bomb, AI, WW2, Oppenheimer, & Abolishing Nukes',
+    href: 'https://youtu.be/tMdMiYsfHKo',
+    image: rhodesImageEP,
+    description:
+      'It was a tremendous honor & pleasure to interview Richard Rhodes, author of The Making of the Atomic Bomb.',
+    date: '2023-05-23',
+    category: 'History',
+    author: 'Dwarkesh Patel',
+  },
+  {
+    title:
+      'The Tim Ferriss Show - Brené Brown — Striving versus Self-Acceptance, Saving Marriages, and More',
+    href: 'https://youtu.be/Wh5SUF0gPWQ',
+    image: breneImageEP,
+    description:
+      'She has spent the past two decades studying courage, vulnerability, shame, and empathy and is the author of five #1 New York Times bestsellers',
+    date: '2020-02-06',
+    category: 'Psychology',
+    author: 'Tim Ferriss',
+  },
+  {
+    title:
+      'The Tim Ferriss Show - Dr. Peter Attia — The Science and Art of Longevity',
+    href: 'https://youtu.be/9l-_c8kcfR4',
+    image: peterImageEP,
+    description:
+      'Peter Attia, MD (@PeterAttiaMD), is the founder of Early Medical, a medical practice that applies the principles of Medicine 3.0 to patients with the goal of lengthening their lifespan and simultaneously improving their healthspan. He is the host of The Drive, one of the most popular podcasts covering the topics of health and medicine.',
+    date: '2023-03-15',
+    category: 'Health',
+    author: 'Tim Ferriss',
+  },
+  {
+    title: 'Sam Harris - The Paradox of Psychedelics',
+    href: 'https://youtu.be/_V9BVWgSO_0',
+    image: psychdelicsImage,
+    description:
+      'In this episode of the podcast, Sam Harris shares an audio essay exploring how psychedelics are, for many, the only way to glimpse "the vast firmament beyond the prison walls” of the “conceptual mind”—and often serve as the gateway to meditation.',
+    date: '2022-06-29',
+    category: 'Psychology',
+    author: 'Sam Harris',
+  },
+  {
+    title: 'Naval Ravikant - How to Get Rich: ',
+    href: 'https://youtu.be/1-TZqOsVCNM',
+    image: richImageEP,
+    description:
+      'Seek Wealth, Not Money or Status. Make Abundance for the World. Free Markets Are Intrinsic to Humans. Making Money Isn’t About Luck',
+    date: '2019-12-25',
+    category: 'Business',
+    author: 'Naval Ravikant',
+  },
+  {
+    title:
+      'The Tim Ferriss Show - Naval Ravikant on Happiness, Reducing Anxiety, Crypto Stablecoins, and More',
+    href: 'https://youtu.be/HiYo14wylQw',
+    image: timferrisnavalImageEP,
+    description:
+      'Naval Ravikant is the co-founder and chairman of AngelList. He is an angel investor and has invested in more than 100 companies, including many mega-successes, such as Twitter, Uber, Notion, Opendoor, Postmates, and Wish.',
+    date: '2020-10-16',
+    category: 'Philosophy',
+    author: 'Tim Ferriss',
+  },
+  {
+    title: 'The Joe Rogan Experience - Chuck Palahniuk',
+    href: 'https://open.spotify.com/episode/1j5rNNfDQuGjj3EjErwVge?si=SoqBNGPAQYuty-kbR7qrJw',
+    image: chuckRoganImageEP,
+    description:
+      'Chuck Palahniuk is an American novelist and freelance journalist, who describes his work as transgressional fiction. He is the author of the award-winning novel Fight Club, which also was made into a popular film of the same name.',
+    date: '2018-08-01',
+    category: 'Philosophy',
+    author: 'Joe Rogan',
+  },
+];
