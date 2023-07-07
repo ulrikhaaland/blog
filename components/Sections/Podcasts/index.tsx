@@ -1,8 +1,14 @@
 import { useState } from 'react';
-import { podcastList } from '../../../data/knowledge';
+import {
+  Podcast,
+  PodcastEpisode,
+  PodcastEpisodeList,
+  podcastList,
+} from '../../../data/knowledge';
 import Image from 'next/image';
 
 const pods = podcastList;
+const episodes = PodcastEpisodeList;
 
 enum PodType {
   CHANNEL = 'CHANNEL',
@@ -11,6 +17,8 @@ enum PodType {
 
 export default function SectionPodcasts({}) {
   const [podcastType, setPodcastType] = useState(PodType.CHANNEL);
+
+  const [pod, setPod] = useState<Podcast[] | PodcastEpisode[]>(pods);
 
   return (
     <div className={'bg-white lg:pt-12 pb-px128 pt-8'}>
@@ -21,13 +29,16 @@ export default function SectionPodcasts({}) {
           </h2>
           {podcastType === PodType.EPISODE && (
             <p className='mt-3 text-xl text-gray-500 sm:mt-4'>
-              Episodene som er så bra at jeg kan høre på nytt
+              Så bra at jeg kan høre på nytt
             </p>
           )}
 
           <div className='mt-4'>
             <button
-              onClick={() => setPodcastType(PodType.CHANNEL)}
+              onClick={() => {
+                setPodcastType(PodType.CHANNEL);
+                setPod(pods);
+              }}
               className={`px-3 py-1 mr-2 rounded-full ${
                 podcastType === PodType.CHANNEL
                   ? 'bg-blue-500 text-white'
@@ -37,7 +48,10 @@ export default function SectionPodcasts({}) {
               Kanaler
             </button>
             <button
-              onClick={() => setPodcastType(PodType.EPISODE)}
+              onClick={() => {
+                setPodcastType(PodType.EPISODE);
+                setPod(episodes);
+              }}
               className={`px-3 py-1 rounded-full ${
                 podcastType === PodType.EPISODE
                   ? 'bg-blue-500 text-white'
@@ -50,7 +64,7 @@ export default function SectionPodcasts({}) {
         </div>
 
         <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
-          {pods.map((pod) => (
+          {pod.map((pod) => (
             <article
               key={pod.title}
               className='flex max-w-xl flex-col items-start justify-between'
