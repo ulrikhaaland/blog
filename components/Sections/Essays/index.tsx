@@ -3,26 +3,27 @@ import image from '../../../assets/posts/future.png';
 import { useNavigate } from 'react-router-dom';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { shuffle } from '@/utils/utils.util';
+import { useState } from 'react';
 
-const essays = essayList;
+export default function SectionEssays({}) {
+  const [essays, setEssays] = useState(essayList.slice(0, 3));
 
-interface Props {
-  homePage?: boolean;
-}
-
-export default function SectionEssays({ homePage }: Props) {
+  const showMore = () => {
+    setEssays(essayList); // Show all books
+  };
   return (
     <div
       className={'bg-white '}
       style={{
-        paddingTop: homePage ? 64 : 128,
+        paddingTop: 128,
         paddingBottom: 128,
       }}
     >
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
           <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-            {homePage ? 'Fra bloggen' : 'Essays'}
+            {'Essays'}
           </h2>
           {/* <p className='mt-3 text-xl text-gray-500 sm:mt-4'>
             Det beste du kan gjøre for deg selv er å lære deg å lese på Engelsk.
@@ -35,9 +36,9 @@ export default function SectionEssays({ homePage }: Props) {
           {shuffle(essays).map((essay) => (
             <article
               key={essay.title}
-              className='flex max-w-xl flex-col items-start justify-between'
+              className='flex max-w-xl flex-col items-start'
             >
-              <div className='relative w-full h-64 rounded-lg overflow-hidden flex justify-center items-center'>
+              <div className='relative w-full h-56 rounded-lg overflow-hidden flex justify-center items-center'>
                 <a
                   href={essay.href}
                   target='_blank'
@@ -61,7 +62,7 @@ export default function SectionEssays({ homePage }: Props) {
                 className='flex items-center gap-x-4 text-xs'
               >
                 <time dateTime={essay.date} className='text-gray-500'>
-                  {essay.date}
+                  {essay.date.substring(0, 4)}
                 </time>
                 <span
                   style={{
@@ -99,27 +100,24 @@ export default function SectionEssays({ homePage }: Props) {
             </article>
           ))}
         </div>
+        {essays.length < essayList.length && (
+          <button
+            onClick={showMore}
+            style={{
+              background: 'linear-gradient(90deg, #afd4c5, #6db2a8)',
+              color: 'white',
+              fontWeight: 'bold',
+              padding: '10px 20px',
+              borderRadius: '30px',
+              border: 'none',
+              cursor: 'pointer',
+              marginTop: '16px',
+            }}
+          >
+            Vis mer
+          </button>
+        )}
       </div>
     </div>
   );
-}
-
-function shuffle(array: any[]) {
-  let currentIndex = array.length,
-    randomIndex;
-
-  // While there remain elements to shuffle.
-  while (currentIndex != 0) {
-    // Pick a remaining element.
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-
-  return array;
 }

@@ -4,11 +4,13 @@ import { NextPageWithLayout } from '../_app';
 import SectionEssays from '@/components/Sections/Essays';
 import { Box } from '@mui/material';
 import SectionPodcasts from '@/components/Sections/Podcasts';
+import SectionInfluencers from '@/components/Sections/Influencers';
 
 const KnowledgePage: NextPageWithLayout = () => {
   const booksRef = useRef(null);
   const essaysRef = useRef(null);
   const podcastsRef = useRef(null);
+  const influencersRef = useRef(null);
 
   // This function scrolls to a given ref
   const scrollToRef = (ref: any) => {
@@ -42,7 +44,10 @@ const KnowledgePage: NextPageWithLayout = () => {
           >
             Podcasts
           </p>
-          <p className='text-lg cursor-pointer font-semibold leading-6 text-gray-600 hover:text-black'>
+          <p
+            className='text-lg cursor-pointer font-semibold leading-6 text-gray-600 hover:text-black'
+            onClick={() => scrollToRef(influencersRef)}
+          >
             Folk å følge
           </p>
         </Box>
@@ -55,6 +60,9 @@ const KnowledgePage: NextPageWithLayout = () => {
       </div>
       <div ref={podcastsRef}>
         <SectionPodcasts />
+      </div>
+      <div ref={influencersRef}>
+        <SectionInfluencers />
       </div>
     </Box>
   );

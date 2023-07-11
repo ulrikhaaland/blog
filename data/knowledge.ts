@@ -19,7 +19,7 @@ import selfishImage from '../assets/books/selfish.jpg';
 import sixImage from '../assets/books/six.jpg';
 import philImage from '../assets/books/thestoryofphilosophy.jpg';
 import whyImage from '../assets/books/why.jpg';
-import dwarkeshImage from '../assets/books/wisdom.jpg';
+import wisdomImage from '../assets/books/wisdom.jpg';
 // ESSAYS
 import aiImage from '../assets/essays/ai.png';
 import alexanderImage from '../assets/essays/alexander.png';
@@ -58,7 +58,7 @@ import portalImage from '../assets/podcasts/portal.jpg';
 import priosImage from '../assets/podcasts/prios.jpg';
 import tylerImage from '../assets/podcasts/tyler.jpg';
 import wakingImage from '../assets/podcasts/waking.jpg';
-import wisdomImage from '../assets/podcasts/dwarkesh.jpg';
+import dwarkeshImage from '../assets/podcasts/dwarkesh.jpg';
 // PODCAST EPISODES
 import bottomImageEP from '../assets/podcastepisodes/bottom.jpg';
 import breneImageEP from '../assets/podcastepisodes/brene.jpg';
@@ -85,6 +85,39 @@ import talebImageEP from '../assets/podcastepisodes/taleb.jpg';
 import tedImageEP from '../assets/podcastepisodes/ted.jpg';
 import timferrisnavalImageEP from '../assets/podcastepisodes/timferrisnaval.jpg';
 import chuckRoganImageEP from '../assets/podcastepisodes/chuckRogan.jpg';
+// INFLUENCERS
+import aldenInfluencerImage from '../assets/influencers/alden.jpg';
+import altmanInfluencerImage from '../assets/influencers/altman.jpg';
+import attiaInfluencerImage from '../assets/influencers/attia.png';
+import backInfluencerImage from '../assets/influencers/back.jpg';
+import bierInfluencerImage from '../assets/influencers/bier.jpg';
+import brownInfluencerImage from '../assets/influencers/brown.jpg';
+import buterinInfluencerImage from '../assets/influencers/buterin.jpg';
+import cammarataInfluencerImage from '../assets/influencers/cammarata.jpg';
+import carmackInfluencerImage from '../assets/influencers/carmack.jpg';
+import carterInfluencerImage from '../assets/influencers/carter.jpg';
+import chintalaInfluencerImage from '../assets/influencers/chintala.jpg';
+import cremieuxInfluencerImage from '../assets/influencers/cremieux.jpg';
+import deutschInfluencerImage from '../assets/influencers/deutsch.jpg';
+import filbInfluencerImage from '../assets/influencers/filb.jpg';
+import glassnodeInfluencerImage from '../assets/influencers/glassnode.jpg';
+import grahamInfluencerImage from '../assets/influencers/graham.jpg';
+import hardmaruInfluencerImage from '../assets/influencers/hardmaru.jpg';
+import hayesInfluencerImage from '../assets/influencers/hayes.jpg';
+import karpathyInfluencerImage from '../assets/influencers/karpathy.jpg';
+import levelsInfluencerImage from '../assets/influencers/levels.jpg';
+import masadInfluencerImage from '../assets/influencers/masad.jpg';
+import mollickInfluencerImage from '../assets/influencers/mollick.jpg';
+import ngInfluencerImage from '../assets/influencers/ng.jpg';
+import ravikantInfluencerImage from '../assets/influencers/ravikant.jpg';
+import rhondaInfluencerImage from '../assets/influencers/rhonda.png';
+import satchinInfluencerImage from '../assets/influencers/satchin.jpg';
+import sinclairInfluencerImage from '../assets/influencers/sinclair.jpg';
+import srinivasanInfluencerImage from '../assets/influencers/srinivasan.jpg';
+import talebInfluencerImage from '../assets/influencers/taleb.jpg';
+import walkerInfluencerImage from '../assets/influencers/walker.jpg';
+import weinsteinInfluencerImage from '../assets/influencers/weinstein.jpg';
+import wooInfluencerImage from '../assets/influencers/woo.jpg';
 
 export interface Books {
   title: string;
@@ -112,6 +145,7 @@ export interface Podcast {
   image: StaticImageData | string;
   description: string;
   category: string;
+  date?: string;
   author: string;
 }
 
@@ -123,6 +157,15 @@ export interface PodcastEpisode {
   date: string;
   category: string;
   author: string;
+}
+
+export interface Influencer {
+  name: string;
+  image: StaticImageData | string;
+  description: string;
+  category: string;
+  twitter?: string;
+  website?: string;
 }
 
 export const bookList: Books[] = [
@@ -270,7 +313,7 @@ export const bookList: Books[] = [
     href: 'https://a.co/d/9ZdbWrG',
     image: prisonerImage,
     description:
-      ' En dyptgående utforskning av spillteori gjennom studiet av fengselsdilemmaet, en av de mest berømte paradoksene i moderne vitenskap.',
+      'En dyptgående utforskning av spillteori gjennom studiet av fengselsdilemmaet, en av de mest berømte paradoksene i moderne vitenskap.',
     date: '1991-01-01',
     category: 'Science',
 
@@ -729,7 +772,8 @@ export const PodcastEpisodeList: PodcastEpisode[] = [
     title: 'The Tim Ferris Show - Chuck Palahniuk, Author of Fight Club',
     href: 'https://tim.blog/2020/09/02/chuck-palahniuk/',
     image: chuckImageEP,
-    description: 'A Masterclass in Creative Living and Dangerous Writing',
+    description:
+      'A Masterclass in Creative Living and Dangerous WritingA Masterclass in Creative Living and Dangerous WritingA Masterclass in Creative Living and Dangerous Writing',
     date: '2020-09-02',
     category: 'Writing',
     author: 'Tim Ferriss',
@@ -915,7 +959,7 @@ export const PodcastEpisodeList: PodcastEpisode[] = [
   {
     title: 'Sam Harris - The Paradox of Psychedelics',
     href: 'https://youtu.be/_V9BVWgSO_0',
-    image: psychdelicsImage,
+    image: paradoxImageEP,
     description:
       'In this episode of the podcast, Sam Harris shares an audio essay exploring how psychedelics are, for many, the only way to glimpse "the vast firmament beyond the prison walls” of the “conceptual mind”—and often serve as the gateway to meditation.',
     date: '2022-06-29',
@@ -952,5 +996,263 @@ export const PodcastEpisodeList: PodcastEpisode[] = [
     date: '2018-08-01',
     category: 'Philosophy',
     author: 'Joe Rogan',
+  },
+];
+
+export const influencerList: Influencer[] = [
+  {
+    name: 'Naval Ravikant',
+    image: ravikantInfluencerImage,
+    description: 'Speak truth, feel love, be free.',
+    category: 'Philosophy',
+    twitter: 'https://twitter.com/naval',
+    website: 'https://nav.al/',
+  },
+  {
+    name: 'David Deutsch',
+    image: deutschInfluencerImage,
+    description:
+      'Physicist. Author of The Fabric of Reality and The Beginning of Infinity',
+    category: 'Science',
+    twitter: 'https://twitter.com/DavidDeutschOxf',
+    website: 'https://www.daviddeutsch.org.uk/',
+  },
+  {
+    name: 'Sam Harris',
+    image: wakingImage,
+    description:
+      'Author of five New York Times bestsellers, host of the Making Sense podcast, and creator of the Waking Up app.',
+    category: 'Philosophy',
+    website: 'https://samharris.org/',
+  },
+  {
+    name: 'Nick Cammarata',
+    image: cammarataInfluencerImage,
+    description: 'safety researcher at openai',
+    category: 'Philosophy',
+    twitter: 'https://twitter.com/nickcammarata',
+  },
+  {
+    name: 'Andrej Karpathy',
+    image: karpathyInfluencerImage,
+    description:
+      'Building a kind of JARVIS @ OреոΑӏ. Previously Director of AI @ Tesla, CS231n, PhD @ Stanford. I like to train large deep neural nets 🧠🤖💥',
+    category: 'AI',
+    twitter: 'https://twitter.com/karpathy',
+    website: 'https://karpathy.ai/',
+  },
+  {
+    name: 'Amjad Masad',
+    image: masadInfluencerImage,
+    description: 'Founder & CEO @replit',
+    category: 'Programming',
+    twitter: 'https://twitter.com/amasad',
+    website: 'https://amasad.me/',
+  },
+  {
+    name: 'Balaji S. Srinivasan',
+    image: srinivasanInfluencerImage,
+    description: 'Immutable money, infinite frontier, eternal life. #Bitcoin',
+    category: 'Technology',
+    twitter: 'https://twitter.com/balajis',
+    website: 'https://balajis.com/',
+  },
+  {
+    name: 'Pieter Levels',
+    image: levelsInfluencerImage,
+    description: 'Solo maker. Founder of Nomad List, Remote OK, and others.',
+    category: 'Business',
+    twitter: 'https://twitter.com/levelsio',
+    website: 'https://levels.io/',
+  },
+  {
+    name: 'John Carmack',
+    image: carmackInfluencerImage,
+    description:
+      'AGI at Keen Technologies, former CTO Oculus VR, Founder Id Software and Armadillo Aerospace',
+    category: 'Technology',
+    twitter: 'https://twitter.com/ID_AA_Carmack',
+  },
+  {
+    name: 'Nikita Bier',
+    image: bierInfluencerImage,
+    description:
+      'I make apps grow really fast. founder @gasappteam (acq by discord), ex-founder @thetbhapp (acq by facebook), ex-new products @meta',
+    category: 'Social Technology',
+    twitter: 'https://twitter.com/nikitabier',
+    website: 'https://nikitabier.com/',
+  },
+  {
+    name: 'Crémieux',
+    image: cremieuxInfluencerImage,
+    description: "I write about genetics, 'metrics, and demographics.",
+    category: 'Statistics',
+    twitter: 'https://twitter.com/cremieuxrecueil',
+  },
+  {
+    name: 'Hardmaru',
+    image: hardmaruInfluencerImage,
+    description:
+      'Building Collective Intelligence 🧠 東京 Gaijin 🗼 Past: Stability AI, Google Brain, Goldman Sachs',
+    category: 'AI',
+    twitter: 'https://twitter.com/hardmaru',
+  },
+
+  {
+    name: 'Noam Brown',
+    image: brownInfluencerImage,
+    description: 'AI researcher @OpenAI',
+    category: 'AI',
+    twitter: 'https://twitter.com/polynoamial',
+  },
+  {
+    name: 'Soumith Chintala',
+    image: chintalaInfluencerImage,
+    description: 'Cofounded and lead @PyTorch',
+    category: 'AI',
+    twitter: 'https://twitter.com/soumithchintala',
+  },
+  {
+    name: 'Ethan Mollick',
+    image: mollickInfluencerImage,
+    description: 'Professor at Wharton.',
+    category: 'AI',
+    twitter: 'https://twitter.com/emollick',
+  },
+  {
+    name: 'Andrew Ng',
+    image: ngInfluencerImage,
+    description:
+      'Co-Founder of Coursera; Stanford CS adjunct faculty. Former head of Baidu AI Group/Google Brain. #ai #machinelearning, #deeplearning #MOOCs',
+    category: 'AI',
+    twitter: 'https://twitter.com/AndrewYNg',
+  },
+  {
+    name: 'Nassim Nicholas Taleb',
+    image: talebInfluencerImage,
+    description:
+      'Flaneur. Probability, philosophy, mathematics, history, risk taking, fitness, randomness, stoicism. Books: INCERTO',
+    category: 'Philosophy',
+    twitter: 'https://twitter.com/nntaleb',
+  },
+  {
+    name: 'Vitalik Buterin',
+    image: buterinInfluencerImage,
+    description: 'Inventor of Ethereum.',
+    category: 'Crypto',
+    twitter: 'https://twitter.com/VitalikButerin',
+  },
+  {
+    name: 'Paul Graham',
+    image: grahamInfluencerImage,
+    description: 'I like writing and programming and startups.',
+    category: 'Business',
+    twitter: 'https://twitter.com/paulg',
+    website: 'http://paulgraham.com/',
+  },
+  {
+    name: 'Eric Weinstein',
+    image: weinsteinInfluencerImage,
+    description:
+      'Managing Director @ Thiel Capital, host of The Portal, PhD in Mathematical Physics',
+    category: 'Philosophy',
+    twitter: 'https://twitter.com/EricRWeinstein',
+  },
+  {
+    name: 'Sam Altman',
+    image: altmanInfluencerImage,
+    description: 'CEO of OpenAI. Investor at Y Combinator.',
+    category: 'AI',
+    twitter: 'https://twitter.com/sama',
+  },
+  {
+    name: 'Arthur Hayes',
+    image: hayesInfluencerImage,
+    description: 'CEO of BitMEX',
+    category: 'Crypto',
+    twitter: 'https://twitter.com/CryptoHayes',
+  },
+  {
+    name: 'Lyn Alden',
+    image: aldenInfluencerImage,
+    description: 'Founder of Lyn Alden Investment Strategy',
+    category: 'Investing',
+    twitter: 'https://twitter.com/LynAldenContact',
+  },
+  {
+    name: 'Nic Carter',
+    image: carterInfluencerImage,
+    description: 'Partner at Castle Island Ventures',
+    category: 'Crypto',
+    twitter: 'https://twitter.com/nic__carter',
+  },
+  {
+    name: 'Adam Back',
+    image: backInfluencerImage,
+    description: 'CEO of Blockstream',
+    category: 'Crypto',
+    twitter: 'https://twitter.com/adam3us',
+  },
+  {
+    name: 'glassnode',
+    image: glassnodeInfluencerImage,
+    description: 'On-chain market intelligence',
+    category: 'Crypto Analytics',
+    twitter: 'https://twitter.com/glassnode',
+  },
+  {
+    name: 'filbfilb',
+    image: filbInfluencerImage,
+    description: 'Analyst & Trader',
+    category: 'Crypto Analytics',
+    twitter: 'https://twitter.com/filbfilb',
+  },
+  {
+    name: 'Willy Woo',
+    image: wooInfluencerImage,
+    description: 'On-chain analyst',
+    category: 'Crypto Analytics',
+    twitter: 'https://twitter.com/woonomic',
+  },
+  {
+    name: 'Matt Walker',
+    image: walkerInfluencerImage,
+    description:
+      'Professor of Neuroscience at UC Berkeley • Author: Why We Sleep',
+    category: 'Health',
+    twitter: 'https://twitter.com/sleepdiplomat',
+    website: 'https://www.sleepdiplomat.com/',
+  },
+  {
+    name: 'Peter Attia',
+    image: attiaInfluencerImage,
+    description: 'Founder of Attia Medical, PC',
+    category: 'Health',
+    twitter: 'https://twitter.com/PeterAttiaMD',
+    website: 'https://peterattiamd.com/',
+  },
+  {
+    name: 'David Sinclair',
+    image: sinclairInfluencerImage,
+    description: 'Professor of Genetics at Harvard Medical School',
+    category: 'Health',
+    twitter: 'https://twitter.com/davidasinclair',
+    website: 'https://lifespanbook.com/',
+  },
+  {
+    name: 'Rhonda Patrick',
+    image: rhondaInfluencerImage,
+    description: 'Ph.D. in biomedical science',
+    category: 'Health',
+    twitter: 'https://twitter.com/foundmyfitness',
+    website: 'https://www.foundmyfitness.com/',
+  },
+  {
+    name: 'Satchin Panda',
+    image: satchinInfluencerImage,
+    description:
+      'Professor at the Salk Institute. Author of The Circadian Code.',
+    category: 'Health',
+    twitter: 'https://twitter.com/SatchinPanda',
   },
 ];
