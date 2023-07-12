@@ -85,6 +85,8 @@ import talebImageEP from '../assets/podcastepisodes/taleb.jpg';
 import tedImageEP from '../assets/podcastepisodes/ted.jpg';
 import timferrisnavalImageEP from '../assets/podcastepisodes/timferrisnaval.jpg';
 import chuckRoganImageEP from '../assets/podcastepisodes/chuckRogan.jpg';
+import talebRavikantImageEP from '../assets/podcastepisodes/talebravikant.jpg';
+
 // INFLUENCERS
 import aldenInfluencerImage from '../assets/influencers/alden.jpg';
 import altmanInfluencerImage from '../assets/influencers/altman.jpg';
@@ -967,7 +969,7 @@ export const PodcastEpisodeList: PodcastEpisode[] = [
     author: 'Sam Harris',
   },
   {
-    title: 'Naval Ravikant - How to Get Rich: ',
+    title: 'Naval Ravikant - How to Get Rich',
     href: 'https://youtu.be/1-TZqOsVCNM',
     image: richImageEP,
     description:
@@ -996,6 +998,15 @@ export const PodcastEpisodeList: PodcastEpisode[] = [
     date: '2018-08-01',
     category: 'Philosophy',
     author: 'Joe Rogan',
+  },
+  {
+    title: 'Nassim Nicholas Taleb & Naval Ravikant',
+    href: 'https://youtu.be/Da0aXfshlxM',
+    image: talebRavikantImageEP,
+    description: '"Trial and error will always outperform iq or design"',
+    date: '2018-10-14',
+    category: 'Philosophy',
+    author: 'Nassim Nicholas Taleb',
   },
 ];
 

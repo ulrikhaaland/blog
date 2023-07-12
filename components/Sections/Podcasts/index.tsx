@@ -59,9 +59,14 @@ export default function SectionPodcasts({}) {
               }}
               className={`px-3 py-1 mr-2 rounded-full ${
                 podcastType === PodType.CHANNEL
-                  ? 'bg-blue-500 text-white'
+                  ? ''
                   : 'bg-gray-200 text-gray-500'
               }`}
+              style={{
+                backgroundColor:
+                  podcastType === PodType.CHANNEL ? '#57b8ca' : '',
+                color: podcastType === PodType.CHANNEL ? '#fff' : '',
+              }}
             >
               Kanaler
             </button>
@@ -72,9 +77,14 @@ export default function SectionPodcasts({}) {
               }}
               className={`px-3 py-1 rounded-full ${
                 podcastType === PodType.EPISODE
-                  ? 'bg-blue-500 text-white'
+                  ? ''
                   : 'bg-gray-200 text-gray-500'
               }`}
+              style={{
+                backgroundColor:
+                  podcastType === PodType.EPISODE ? '#57b8ca' : '',
+                color: podcastType === PodType.EPISODE ? '#fff' : '',
+              }}
             >
               Episoder
             </button>
@@ -87,7 +97,7 @@ export default function SectionPodcasts({}) {
         </div>
 
         <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
-          {shuffle(pods).map((pod) => (
+          {pods.map((pod) => (
             <article
               key={pod.title}
               className='flex max-w-xl flex-col items-start'
@@ -119,7 +129,7 @@ export default function SectionPodcasts({}) {
                     className={
                       podcastType === PodType.EPISODE
                         ? 'w-full h-full'
-                        : 'w-32 h-32' +
+                        : 'w-46 h-46' +
                           'object-cover object-center rounded-full transition duration-500 ease-in-out transform hover:scale-110'
                     }
                   />

@@ -1,14 +1,14 @@
-import React, { createContext, useContext } from "react";
-import RootStore from "./stores/root.store";
+import React, { createContext, useContext } from 'react';
+import RootStore from './stores/root.store';
 
 interface ComponentProps {
   children: React.ReactNode;
 }
 
-const RootStoreContext = createContext(new RootStore());
+const store = new RootStore(); // Create a single instance of the store
+const RootStoreContext = createContext(store); // Pass the store instance to the context
 
 export const RootStoreProvider = ({ children }: ComponentProps) => {
-  const store = new RootStore();
   return (
     <RootStoreContext.Provider value={store}>
       {children}
@@ -19,7 +19,7 @@ export const RootStoreProvider = ({ children }: ComponentProps) => {
 export const useStore = (): RootStore => {
   const store = useContext(RootStoreContext);
   if (!store) {
-    throw new Error("useStore must be used within a storeProvider");
+    throw new Error('useStore must be used within a storeProvider');
   }
   return store;
 };

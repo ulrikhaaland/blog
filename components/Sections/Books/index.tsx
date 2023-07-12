@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { shuffle } from '@/utils/utils.util';
+import {} from '@/utils/utils.util';
 
 const books = bookList;
 
@@ -34,7 +34,7 @@ export default function SectionBooks({ homePage }: Props) {
         </div>
 
         <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
-          {shuffle(shownBooks).map((book) => (
+          {shownBooks.map((book) => (
             <article
               key={book.title}
               className='flex max-w-xl flex-col items-start'

@@ -2,19 +2,9 @@ import { useState } from 'react';
 import { Influencer, influencerList } from '../../../data/knowledge';
 import Image from 'next/image';
 import { shuffle } from '@/utils/utils.util';
-
-const pallette = [
-  'linear-gradient(90deg, #3c8990, #d6cac2)',
-  'linear-gradient(90deg, #d6cac2, #b73026)',
-  'linear-gradient(90deg, #b73026, #e5813c)',
-  'linear-gradient(90deg, #e5813c, #ce7f6f)',
-  'linear-gradient(90deg, #ce7f6f, #80bdb9)',
-  'linear-gradient(90deg, #80bdb9, #f5a76f)',
-  'linear-gradient(90deg, #f5a76f, #edebe9)',
-  'linear-gradient(90deg, #edebe9, #1f3158)',
-  'linear-gradient(90deg, #1f3158, #3c8990)',
-  'linear-gradient(90deg, #3c8990, #d6cac2)',
-];
+import { Icon, IconButton } from '@mui/material';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import WebIcon from '@mui/icons-material/Language';
 
 export default function SectionInfluencers({}) {
   const [influencers, SetInfluencers] = useState<Influencer[]>(
@@ -30,16 +20,18 @@ export default function SectionInfluencers({}) {
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
           <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-            {'People'}
+            {'Personer'}
           </h2>
 
-          <p className='mt-3 text-xl text-gray-500 sm:mt-4'></p>
+          <p className='mt-3 text-xl text-gray-500 sm:mt-4'>Twitter</p>
+          <p className='text-xl text-gray-500 '>Platformen for ideer</p>
+          <p className='text-xl text-gray-500 '>Hvis du ikke er der gå der</p>
         </div>
 
         <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
-          {shuffle(influencers).map((influencer) => (
+          {influencers.map((influencer) => (
             <article
-              key={influencer.title}
+              key={influencer.name}
               className='flex max-w-xl flex-col items-start'
             >
               <div
@@ -52,7 +44,7 @@ export default function SectionInfluencers({}) {
                 }}
               >
                 <a
-                  href={influencer.tw}
+                  href={influencer.twitter ?? influencer.website}
                   target='_blank'
                   rel='noopener noreferrer'
                   style={{
@@ -60,11 +52,11 @@ export default function SectionInfluencers({}) {
                   }}
                 >
                   <Image
-                    id={influencer.title}
+                    id={influencer.name}
                     src={influencer.image}
-                    alt={influencer.title}
+                    alt={influencer.name}
                     className={
-                      'w-32 h-32 object-cover object-center rounded-full transition duration-500 ease-in-out transform hover:scale-110'
+                      'w-48 h-48 object-cover object-center rounded-full transition duration-500 ease-in-out transform hover:scale-110'
                     }
                   />
                 </a>
@@ -76,19 +68,6 @@ export default function SectionInfluencers({}) {
                 }}
                 className='flex items-center gap-x-4 text-xs w-full'
               >
-                {influencer.date ? (
-                  <span
-                    className='text-gray-500'
-                    style={{
-                      right: 0,
-                    }}
-                  >
-                    {influencer.date.substring(0, 4)}
-                  </span>
-                ) : (
-                  <></>
-                )}
-                <span className='text-gray-500'>{influencer.author}</span>
                 <span
                   style={{
                     cursor: 'pointer',
@@ -97,12 +76,50 @@ export default function SectionInfluencers({}) {
                 >
                   {influencer.category}
                 </span>
+                <div>
+                  {influencer.twitter && (
+                    <a
+                      href={influencer.twitter}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      style={{
+                        cursor: 'pointer',
+                      }}
+                    >
+                      <IconButton>
+                        <TwitterIcon
+                          sx={{
+                            color: '#1DA1F2',
+                          }}
+                        />
+                      </IconButton>
+                    </a>
+                  )}
+                  {influencer.website && (
+                    <a
+                      href={influencer.website}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      style={{
+                        cursor: 'pointer',
+                      }}
+                    >
+                      <IconButton>
+                        <WebIcon
+                          sx={{
+                            color: 'black',
+                          }}
+                        />
+                      </IconButton>
+                    </a>
+                  )}
+                </div>
               </div>
 
               <div className='group relative'>
                 <h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
                   <a
-                    href={influencer.href}
+                    href={influencer.twitter ?? influencer.website}
                     target='_blank'
                     rel='noopener noreferrer'
                     style={{
