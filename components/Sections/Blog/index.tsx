@@ -59,7 +59,7 @@ export default function SectionBlog({ homePage }: Props) {
                 className='flex items-center gap-x-4 text-xs'
               >
                 <time dateTime={post.date} className='text-gray-500'>
-                  {post.date}
+                  {post.date.substring(0, 4)}
                 </time>
                 <span
                   style={{

@@ -5,6 +5,7 @@ import SectionEssays from '@/components/Sections/Essays';
 import { Box } from '@mui/material';
 import SectionPodcasts from '@/components/Sections/Podcasts';
 import SectionInfluencers from '@/components/Sections/Influencers';
+import SectionTraining from '@/components/Sections/Training';
 
 const KnowledgePage: NextPageWithLayout = () => {
   const booksRef = useRef(null);
@@ -26,6 +27,12 @@ const KnowledgePage: NextPageWithLayout = () => {
           Kunnskap
         </h2>
         <Box className='justify-between w-56 pt-1'>
+          {/* <p
+            className='text-lg cursor-pointer font-semibold leading-6 text-gray-600 hover:text-black'
+            onClick={() => scrollToRef(booksRef)}
+          >
+            Trening
+          </p> */}
           <p
             className='text-lg cursor-pointer font-semibold leading-6 text-gray-600 hover:text-black'
             onClick={() => scrollToRef(booksRef)}
@@ -52,6 +59,9 @@ const KnowledgePage: NextPageWithLayout = () => {
           </p>
         </Box>
       </Box>
+      {/* <div ref={booksRef}>
+        <SectionTraining />
+      </div> */}
       <div ref={booksRef}>
         <SectionBooks />
       </div>

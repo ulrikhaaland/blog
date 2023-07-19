@@ -6,21 +6,24 @@ import {
   podcastList,
 } from '../../../data/knowledge';
 import Image from 'next/image';
+import { shuffle } from '@/utils/utils.util';
 
-enum PodType {
-  CHANNEL = 'CHANNEL',
-  EPISODE = 'EPISODE',
+enum TrainingType {
+  ZONE2 = 'Zone2',
+  VO2MAX = 'VO2Max',
+  STRENGTH = 'Strength',
 }
 
-export default function SectionPodcasts({}) {
-  const [podcastType, setPodcastType] = useState(PodType.CHANNEL);
+export default function SectionTraining({}) {
+  const [podcastType, setPodcastType] = useState(TrainingType.ZONE2);
 
   const [pods, setPod] = useState<Podcast[] | PodcastEpisode[]>(
     podcastList.slice(0, 3)
   );
 
   const showMore = () => {
-    if (podcastType === PodType.CHANNEL) setPod(podcastList); // Show all pods
+    if (podcastType === TrainingType.ZONE2)
+      setPod(podcastList); // Show all pods
     else setPod(PodcastEpisodeList);
   };
 
@@ -28,6 +31,7 @@ export default function SectionPodcasts({}) {
     <div
       className={'bg-white'}
       style={{
+        paddingTop: 128,
         paddingBottom: 128,
       }}
     >
@@ -40,43 +44,43 @@ export default function SectionPodcasts({}) {
           <div className='mt-4'>
             <button
               onClick={() => {
-                setPodcastType(PodType.CHANNEL);
+                setPodcastType(TrainingType.ZONE2);
                 setPod(podcastList);
               }}
               className={`px-3 py-1 mr-2 rounded-full ${
-                podcastType === PodType.CHANNEL
+                podcastType === TrainingType.ZONE2
                   ? ''
                   : 'bg-gray-200 text-gray-500'
               }`}
               style={{
                 backgroundColor:
-                  podcastType === PodType.CHANNEL ? '#57b8ca' : '',
-                color: podcastType === PodType.CHANNEL ? '#fff' : '',
+                  podcastType === TrainingType.ZONE2 ? '#57b8ca' : '',
+                color: podcastType === TrainingType.ZONE2 ? '#fff' : '',
               }}
             >
               Kanaler
             </button>
             <button
               onClick={() => {
-                setPodcastType(PodType.EPISODE);
+                setPodcastType(TrainingType.ZONE2);
                 setPod(PodcastEpisodeList);
               }}
               className={`px-3 py-1 rounded-full ${
-                podcastType === PodType.EPISODE
+                podcastType === TrainingType.ZONE2
                   ? ''
                   : 'bg-gray-200 text-gray-500'
               }`}
               style={{
                 backgroundColor:
-                  podcastType === PodType.EPISODE ? '#57b8ca' : '',
-                color: podcastType === PodType.EPISODE ? '#fff' : '',
+                  podcastType === TrainingType.ZONE2 ? '#57b8ca' : '',
+                color: podcastType === TrainingType.ZONE2 ? '#fff' : '',
               }}
             >
               Episoder
             </button>
           </div>
           <p className='mt-3 text-xl text-gray-500 sm:mt-4'>
-            {podcastType === PodType.EPISODE
+            {podcastType === TrainingType.ZONE2
               ? 'Så bra at jeg kan høre på nytt'
               : ' '}
           </p>
@@ -90,7 +94,7 @@ export default function SectionPodcasts({}) {
             >
               <div
                 className={
-                  podcastType === PodType.EPISODE
+                  podcastType === TrainingType.ZONE2
                     ? 'h-56'
                     : 'h-56 ' +
                       'relative w-full rounded-lg overflow-hidden flex justify-center items-center'
@@ -113,7 +117,7 @@ export default function SectionPodcasts({}) {
                     src={pod.image}
                     alt={pod.title}
                     className={
-                      podcastType === PodType.EPISODE
+                      podcastType === TrainingType.ZONE2
                         ? 'w-full h-full'
                         : 'w-46 h-46' +
                           'object-cover object-center rounded-full transition duration-500 ease-in-out transform hover:scale-110'

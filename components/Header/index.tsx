@@ -113,13 +113,13 @@ function Header() {
           >
             Blogg
           </p>
-          <p
+          {/* <p
             onClick={() => router.push('/tools')}
             style={{ cursor: 'pointer' }}
             className='text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'
           >
             Verktøy
-          </p>
+          </p> */}
           <p
             onClick={() => router.push('/knowledge')}
             style={{ cursor: 'pointer' }}
@@ -212,7 +212,7 @@ function Header() {
                 >
                   Blogg
                 </p>
-                <p
+                {/* <p
                   onClick={() => {
                     router.push('/tools');
                     setMobileMenuOpen(false);
@@ -221,7 +221,7 @@ function Header() {
                   className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
                 >
                   Verktøy
-                </p>
+                </p> */}
                 <p
                   onClick={() => {
                     router.push('/knowledge');

@@ -6,7 +6,7 @@ import SectionTools from '@/components/Sections/Tools';
 const HomePage: NextPageWithLayout = () => {
   return (
     <>
-      <SectionTools homePage={true} />
+      {/* <SectionTools homePage={true} /> */}
       <SectionBlog homePage={true} />
     </>
   );
