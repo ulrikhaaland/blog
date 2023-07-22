@@ -62,7 +62,7 @@ const content = (
       kjente på har nå forsvunnet og blitt erstattet med en ubegrenset
       selvtillit, som om jeg har svelget pillen fra filmklassikeren
       &quot;Limitless.&quot; Jeg er gjenfødt i en verden formet av våre egne
-      hender, en verden hvor løsninger får mer oppmerksomhet enn problemer. En
+      hender; en verden hvor løsninger får mer oppmerksomhet enn problemer; en
       verden jeg ser frem til å våkne opp i.
     </p>
   </>
