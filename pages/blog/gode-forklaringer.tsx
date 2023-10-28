@@ -189,12 +189,6 @@ const content = (
     </p>
     <br></br>
     <p>
-      For denne kan vi variere til hva enn vi måtte ønske: &quot;Trening
-      forbedrer hjerte- og karsystemets helse fordi det får deg til å føle deg
-      X, og å føle seg X er alltid sunt.&quot;
-    </p>
-    <br></br>
-    <p>
       Denne forklaringen gir deg makt over fremtiden. Kanskje du har en plante
       som er i ferd med å vokse seg for stor. Du vet at lys er en vital del av
       vekstprosessen. Du bestemmer deg for å la planten stå i skyggen.
